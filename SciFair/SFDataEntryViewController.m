@@ -11,11 +11,15 @@
 
 @interface SFDataEntryViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *genderControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *yearControl;
 
 @end
 
 @implementation SFDataEntryViewController
 @synthesize textField;
+@synthesize genderControl;
+@synthesize yearControl;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     if (theTextField == self.textField) {
@@ -26,6 +30,54 @@
         NSLog(@"The person's name is %@.", [[SFPerson testSubject] name]);
     }
     return YES;
+}
+
+- (void)genderChanged {
+    if (self.genderControl.selectedSegmentIndex == 1) [[SFPerson testSubject] setGender:@"Girl"];
+    else [[SFPerson testSubject] setGender:@"Boy"];
+    NSLog(@"Gender = %@", [[SFPerson testSubject] gender]);
+}
+
+- (void)yearChanged {
+    switch (self.yearControl.selectedSegmentIndex) {
+        case 0:
+            [[SFPerson testSubject] setYear:@"7"];
+            NSLog(@"Year = 7");
+            break;
+            
+        case 1:
+            [[SFPerson testSubject] setYear:@"8"];
+            NSLog(@"Year = 8");
+            break;
+            
+        case 2:
+            [[SFPerson testSubject] setYear:@"9"];
+            NSLog(@"Year = 9");
+            break;
+            
+        case 3:
+            [[SFPerson testSubject] setYear:@"10"];
+            NSLog(@"Year = 10");
+            break;
+            
+        case 4:
+            [[SFPerson testSubject] setYear:@"11"];
+            NSLog(@"Year = 11");
+            break;
+            
+        case 5:
+            [[SFPerson testSubject] setYear:@"12"];
+            NSLog(@"Year = 12");
+            break;
+            
+        case 6:
+            [[SFPerson testSubject] setYear:@"Teacher"];
+            NSLog(@"Year = Teacher");
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,12 +92,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [genderControl addTarget:self
+                    action:@selector(genderChanged)
+          forControlEvents:UIControlEventValueChanged];
+    [yearControl addTarget:self
+                    action:@selector(yearChanged)
+          forControlEvents:UIControlEventValueChanged];
 	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
     [self setTextField:nil];
+    [self setGenderControl:nil];
+    [self setYearControl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

@@ -97,7 +97,7 @@
                     <tabBarItem key="tabBarItem" title="Item 2" id="ZSD-37-DCz"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2207" y="1520"/>
+            <point key="canvasLocation" x="2435" y="1512"/>
         </scene>
         <!--View Controller - Item 1-->
         <scene sceneID="AEn-6L-7qc">
@@ -113,7 +113,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="tyR-JD-Z5H"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2223" y="352"/>
+            <point key="canvasLocation" x="2463" y="340"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YcW-Lc-bks">
@@ -161,7 +161,7 @@
                                     <segment title="Female"/>
                                 </segments>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="SC5-0y-qe7">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" id="SC5-0y-qe7">
                                 <rect key="frame" x="139" y="336" width="563" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -194,18 +194,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Data Entry" id="p4n-t3-D8R"/>
                     <connections>
+                        <outlet property="genderControl" destination="c58-w4-2b2" id="eub-kz-kdk"/>
                         <outlet property="textField" destination="zsO-aj-QOD" id="wMg-dl-rNa"/>
+                        <outlet property="yearControl" destination="SC5-0y-qe7" id="3hp-Xa-rlp"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1273" y="-994"/>
+            <point key="canvasLocation" x="1217" y="-998"/>
         </scene>
     </scenes>
     <classes>
         <class className="SFDataEntryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SFDataEntryViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="genderControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="yearControl" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="SFViewController" superclassName="UIViewController">
