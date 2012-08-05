@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180DA69315CD8AE60029E9C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180DA69215CD8AE60029E9C2 /* UIKit.framework */; };
+		180DA69515CD8AE60029E9C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180DA69415CD8AE60029E9C2 /* Foundation.framework */; };
+		180DA69715CD8AE60029E9C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180DA69615CD8AE60029E9C2 /* CoreGraphics.framework */; };
+		180DA69D15CD8AE60029E9C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 180DA69B15CD8AE60029E9C2 /* InfoPlist.strings */; };
+		180DA69F15CD8AE60029E9C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DA69E15CD8AE60029E9C2 /* main.m */; };
+		180DA6A315CD8AE70029E9C2 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */; };
+		180DA6A615CD8AE70029E9C2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */; };
+		180DA6A915CD8AE70029E9C2 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6A815CD8AE70029E9C2 /* SFViewController.m */; };
+		180DA6B015CD8C830029E9C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180DA6AF15CD8C830029E9C2 /* CoreData.framework */; };
+		180DA6B315CD8C9A0029E9C2 /* SciFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */; };
+		187AECE715CE7DB400077710 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE615CE7DB400077710 /* Times.m */; };
+		187AECEA15CE7DB400077710 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE915CE7DB400077710 /* Person.m */; };
+		187AECED15CE7DB500077710 /* Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECEC15CE7DB500077710 /* Emotion.m */; };
+		18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EBD15CE1CC6006F50E8 /* SFPerson.m */; };
+		18858EC115CE1F3C006F50E8 /* SFDataEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EC015CE1F3C006F50E8 /* SFDataEntryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		180DA68E15CD8AE60029E9C2 /* SciFair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SciFair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180DA69215CD8AE60029E9C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		180DA69415CD8AE60029E9C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		180DA69615CD8AE60029E9C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		180DA69A15CD8AE60029E9C2 /* SciFair-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SciFair-Info.plist"; sourceTree = "<group>"; };
+		180DA69C15CD8AE60029E9C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		180DA69E15CD8AE60029E9C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		180DA6A015CD8AE70029E9C2 /* SciFair-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SciFair-Prefix.pch"; sourceTree = "<group>"; };
+		180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		180DA6A515CD8AE70029E9C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		180DA6A715CD8AE70029E9C2 /* SFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
+		180DA6A815CD8AE70029E9C2 /* SFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
+		180DA6AF15CD8C830029E9C2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		180DA6B215CD8C9A0029E9C2 /* SciFair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SciFair.xcdatamodel; sourceTree = "<group>"; };
+		187AECE515CE7DB400077710 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
+		187AECE615CE7DB400077710 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
+		187AECE815CE7DB400077710 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		187AECE915CE7DB400077710 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		187AECEB15CE7DB500077710 /* Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emotion.h; sourceTree = "<group>"; };
+		187AECEC15CE7DB500077710 /* Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emotion.m; sourceTree = "<group>"; };
+		18858EBC15CE1CC6006F50E8 /* SFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPerson.h; sourceTree = "<group>"; };
+		18858EBD15CE1CC6006F50E8 /* SFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPerson.m; sourceTree = "<group>"; };
+		18858EBF15CE1F3C006F50E8 /* SFDataEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataEntryViewController.h; sourceTree = "<group>"; };
+		18858EC015CE1F3C006F50E8 /* SFDataEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataEntryViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180DA68B15CD8AE60029E9C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180DA6B015CD8C830029E9C2 /* CoreData.framework in Frameworks */,
+				180DA69315CD8AE60029E9C2 /* UIKit.framework in Frameworks */,
+				180DA69515CD8AE60029E9C2 /* Foundation.framework in Frameworks */,
+				180DA69715CD8AE60029E9C2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180DA68315CD8AE60029E9C2 = {
+			isa = PBXGroup;
+			children = (
+				180DA69815CD8AE60029E9C2 /* SciFair */,
+				180DA69115CD8AE60029E9C2 /* Frameworks */,
+				180DA68F15CD8AE60029E9C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180DA68F15CD8AE60029E9C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180DA68E15CD8AE60029E9C2 /* SciFair.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180DA69115CD8AE60029E9C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180DA6AF15CD8C830029E9C2 /* CoreData.framework */,
+				180DA69215CD8AE60029E9C2 /* UIKit.framework */,
+				180DA69415CD8AE60029E9C2 /* Foundation.framework */,
+				180DA69615CD8AE60029E9C2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		180DA69815CD8AE60029E9C2 /* SciFair */ = {
+			isa = PBXGroup;
+			children = (
+				180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */,
+				180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */,
+				180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */,
+				18858EBF15CE1F3C006F50E8 /* SFDataEntryViewController.h */,
+				18858EC015CE1F3C006F50E8 /* SFDataEntryViewController.m */,
+				180DA6A715CD8AE70029E9C2 /* SFViewController.h */,
+				180DA6A815CD8AE70029E9C2 /* SFViewController.m */,
+				18858EBC15CE1CC6006F50E8 /* SFPerson.h */,
+				18858EBD15CE1CC6006F50E8 /* SFPerson.m */,
+				187AECEE15CEC83500077710 /* Core Data */,
+				180DA69915CD8AE60029E9C2 /* Supporting Files */,
+			);
+			path = SciFair;
+			sourceTree = "<group>";
+		};
+		180DA69915CD8AE60029E9C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				180DA69A15CD8AE60029E9C2 /* SciFair-Info.plist */,
+				180DA69B15CD8AE60029E9C2 /* InfoPlist.strings */,
+				180DA69E15CD8AE60029E9C2 /* main.m */,
+				180DA6A015CD8AE70029E9C2 /* SciFair-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		187AECEE15CEC83500077710 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				187AECEB15CE7DB500077710 /* Emotion.h */,
+				187AECEC15CE7DB500077710 /* Emotion.m */,
+				187AECE815CE7DB400077710 /* Person.h */,
+				187AECE915CE7DB400077710 /* Person.m */,
+				187AECE515CE7DB400077710 /* Times.h */,
+				187AECE615CE7DB400077710 /* Times.m */,
+				180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180DA68D15CD8AE60029E9C2 /* SciFair */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180DA6AC15CD8AE70029E9C2 /* Build configuration list for PBXNativeTarget "SciFair" */;
+			buildPhases = (
+				180DA68A15CD8AE60029E9C2 /* Sources */,
+				180DA68B15CD8AE60029E9C2 /* Frameworks */,
+				180DA68C15CD8AE60029E9C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SciFair;
+			productName = SciFair;
+			productReference = 180DA68E15CD8AE60029E9C2 /* SciFair.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180DA68515CD8AE60029E9C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SF;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Carlos Arcenas";
+			};
+			buildConfigurationList = 180DA68815CD8AE60029E9C2 /* Build configuration list for PBXProject "SciFair" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 180DA68315CD8AE60029E9C2;
+			productRefGroup = 180DA68F15CD8AE60029E9C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180DA68D15CD8AE60029E9C2 /* SciFair */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180DA68C15CD8AE60029E9C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180DA69D15CD8AE60029E9C2 /* InfoPlist.strings in Resources */,
+				180DA6A615CD8AE70029E9C2 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180DA68A15CD8AE60029E9C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180DA69F15CD8AE60029E9C2 /* main.m in Sources */,
+				180DA6A315CD8AE70029E9C2 /* SFAppDelegate.m in Sources */,
+				180DA6A915CD8AE70029E9C2 /* SFViewController.m in Sources */,
+				180DA6B315CD8C9A0029E9C2 /* SciFair.xcdatamodeld in Sources */,
+				18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */,
+				18858EC115CE1F3C006F50E8 /* SFDataEntryViewController.m in Sources */,
+				187AECE715CE7DB400077710 /* Times.m in Sources */,
+				187AECEA15CE7DB400077710 /* Person.m in Sources */,
+				187AECED15CE7DB500077710 /* Emotion.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		180DA69B15CD8AE60029E9C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180DA69C15CD8AE60029E9C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180DA6A515CD8AE70029E9C2 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180DA6AA15CD8AE70029E9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		180DA6AB15CD8AE70029E9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180DA6AD15CD8AE70029E9C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SciFair/SciFair-Prefix.pch";
+				INFOPLIST_FILE = "SciFair/SciFair-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		180DA6AE15CD8AE70029E9C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SciFair/SciFair-Prefix.pch";
+				INFOPLIST_FILE = "SciFair/SciFair-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180DA68815CD8AE60029E9C2 /* Build configuration list for PBXProject "SciFair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180DA6AA15CD8AE70029E9C2 /* Debug */,
+				180DA6AB15CD8AE70029E9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180DA6AC15CD8AE70029E9C2 /* Build configuration list for PBXNativeTarget "SciFair" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180DA6AD15CD8AE70029E9C2 /* Debug */,
+				180DA6AE15CD8AE70029E9C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				180DA6B215CD8C9A0029E9C2 /* SciFair.xcdatamodel */,
+			);
+			currentVersion = 180DA6B215CD8C9A0029E9C2 /* SciFair.xcdatamodel */;
+			path = SciFair.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 180DA68515CD8AE60029E9C2 /* Project object */;
+}
