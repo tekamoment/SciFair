@@ -51,8 +51,8 @@
     </entity>
     <elements>
         <element name="Emotion" positionX="-180" positionY="-144" width="128" height="103"/>
-        <element name="Person" positionX="0" positionY="0" width="128" height="118"/>
-        <element name="Times" positionX="-171" positionY="113" width="128" height="283"/>
+        <element name="Person" positionX="0" positionY="0" width="128" height="133"/>
+        <element name="Times" positionX="-11" positionY="212" width="128" height="283"/>
         <element name="Answers" positionX="198" positionY="-112" width="128" height="268"/>
     </elements>
 </model>
