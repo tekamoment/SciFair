@@ -21,6 +21,7 @@
 		183CE8AC15CF4C5F009F8B58 /* SFMainResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */; };
 		183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */; };
 		183CE8B215CF5BE9009F8B58 /* SFEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8B115CF5BE9009F8B58 /* SFEmotion.m */; };
+		183E3BD215D020B500E50157 /* SFTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3BD115D020B500E50157 /* SFTimes.m */; };
 		1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1874134A15CFD57C00E48B50 /* emohappy@2x.png */; };
 		1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */; };
 		187AECE715CE7DB400077710 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE615CE7DB400077710 /* Times.m */; };
@@ -54,6 +55,8 @@
 		183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestViewController.m; sourceTree = "<group>"; };
 		183CE8B015CF5BE9009F8B58 /* SFEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFEmotion.h; sourceTree = "<group>"; };
 		183CE8B115CF5BE9009F8B58 /* SFEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEmotion.m; sourceTree = "<group>"; };
+		183E3BD015D020B500E50157 /* SFTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFTimes.h; path = ../SFTimes.h; sourceTree = "<group>"; };
+		183E3BD115D020B500E50157 /* SFTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFTimes.m; path = ../SFTimes.m; sourceTree = "<group>"; };
 		1874134A15CFD57C00E48B50 /* emohappy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emohappy@2x.png"; sourceTree = "<group>"; };
 		1874134C15CFD84E00E48B50 /* SFTestFinishedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestFinishedViewController.h; sourceTree = "<group>"; };
 		1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestFinishedViewController.m; sourceTree = "<group>"; };
@@ -115,19 +118,21 @@
 		180DA69815CD8AE60029E9C2 /* SciFair */ = {
 			isa = PBXGroup;
 			children = (
+				183E3BD015D020B500E50157 /* SFTimes.h */,
+				183E3BD115D020B500E50157 /* SFTimes.m */,
 				1874134A15CFD57C00E48B50 /* emohappy@2x.png */,
 				180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */,
 				180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */,
 				180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */,
 				183CE8B015CF5BE9009F8B58 /* SFEmotion.h */,
 				183CE8B115CF5BE9009F8B58 /* SFEmotion.m */,
-				1874134F15CFD99F00E48B50 /* Test controllers */,
 				180DA6A715CD8AE70029E9C2 /* SFViewController.h */,
 				180DA6A815CD8AE70029E9C2 /* SFViewController.m */,
 				18858EBC15CE1CC6006F50E8 /* SFPerson.h */,
 				18858EBD15CE1CC6006F50E8 /* SFPerson.m */,
 				183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */,
 				183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */,
+				1874134F15CFD99F00E48B50 /* Test controllers */,
 				187AECEE15CEC83500077710 /* Core Data */,
 				180DA69915CD8AE60029E9C2 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */,
 				183CE8B215CF5BE9009F8B58 /* SFEmotion.m in Sources */,
 				1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */,
+				183E3BD215D020B500E50157 /* SFTimes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

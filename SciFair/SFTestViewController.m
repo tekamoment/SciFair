@@ -8,6 +8,8 @@
 
 #import "SFTestViewController.h"
 #import "SFEmotion.h"
+#import "SFTimes.h"
+
 // CHECK BNR OBJC BOOK FOR HOW TO USE A TIMER
 @interface SFTestViewController ()
 @property (nonatomic) NSTimer *timer;
@@ -27,12 +29,16 @@
         NSLog(@"Yeah!");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
         questionsCorrect++;
+        [self stopTimer:timer];
     } else {
         NSLog(@"Nuh.");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
-    } if (currentQuestionIndex < 15) {
+        [self stopTimer: timer];
+    }
+    if (currentQuestionIndex < 15) {
     currentQuestionIndex++;
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionImageString:currentQuestionIndex]];
+        [self startTimer];
     } else {
         NSNumber *score = [NSNumber numberWithInt:questionsCorrect];
         [[SFPerson testSubject] setPoints:score];
@@ -41,6 +47,24 @@
 
 }
 
+#pragma mark Timer methods
+- (void)startTimer{
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(increaseTimerCount) userInfo:nil repeats:YES];
+    [timer fire];
+}
+
+- (void)increaseTimerCount {
+    timef += 0.1;
+}
+
+- (void)stopTimer:(NSTimer *)timeKeeper {
+    NSNumber *timens = [NSNumber numberWithFloat:timef];
+    [[[SFTimes cumulativeTimes] times] setValue:timens forKey:[self timeNumberString:currentQuestionIndex]];
+    [timeKeeper invalidate];
+}
+
+
+#pragma mark String generation methods
 - (NSString *) questionEmotionString:(int)index {
     return [NSString stringWithFormat:@"image%demotion", index];
 }
@@ -51,6 +75,10 @@
 
 - (NSString *) answerNumberString:(int)index {
     return [NSString stringWithFormat:@"answer%d", index];
+}
+
+- (NSString *) timeNumberString:(int)index {
+     return [NSString stringWithFormat:@"image%dtime", index];
 }
 
 #pragma mark -
@@ -72,7 +100,7 @@
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:@"image1"];
     currentQuestionIndex = 1;
     questionsCorrect = 0;
-    // timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(increaseTimerCount) userInfo:nil repeats:YES];
+    [self startTimer];
 	// Do any additional setup after loading the view.
 }
 

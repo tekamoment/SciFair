@@ -13,6 +13,9 @@
 @interface SFTestViewController : UIViewController {
     int currentQuestionIndex;
     int questionsCorrect;
+    float timef;
+    NSTimer *timer;
+
 }
 
 @end

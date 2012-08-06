@@ -26,10 +26,10 @@
     NSManagedObject *newEntryAnswers = [NSEntityDescription insertNewObjectForEntityForName:@"Answers" inManagedObjectContext:leContext];
     void (^addToCoreData)(id, id, BOOL *);
     addToCoreData = ^(id key, id obj, BOOL *stop) {
-        for (NSString *key in [[SFPerson testSubject] answers]) {
+        //for (NSString *key in [[SFPerson testSubject] answers]) {
             NSString *answer = [[[SFPerson testSubject] answers] objectForKey:key];
             [newEntryAnswers setValue:answer forKey:key];
-        }
+       // }
     };
     [[[SFPerson testSubject] answers] enumerateKeysAndObjectsUsingBlock:addToCoreData];
     [newEntry setValue:newEntryAnswers forKey:@"answers"];
