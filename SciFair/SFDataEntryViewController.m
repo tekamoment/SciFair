@@ -21,6 +21,7 @@
 @synthesize genderControl;
 @synthesize yearControl;
 
+#pragma mark -
 #pragma mark UITextField protocol implementations
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
@@ -33,7 +34,7 @@
     }
     return YES;
 }
-
+#pragma mark -
 #pragma mark Data input -- DONE --
 
 - (void)genderChanged {
@@ -85,10 +86,16 @@
 }
 
 - (IBAction)continuePressed:(UIButton *)sender {
+    if (![[SFPerson testSubject] gender] || ![[SFPerson testSubject] name] || ![[SFPerson testSubject] year]) {
+#pragma mark - IMPLEMENT ALERT FOR NON COMPLETION OF FIELDS -- STOP SEGUE
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Stuff left!" message:@"You still have stuff to put in." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];    
+    } else {
     NSLog(@"Name: %@, Gender: %@, Year: %@.",[[SFPerson testSubject] name], [[SFPerson testSubject] gender], [[SFPerson testSubject] year]);
+    }
 }
 
-
+#pragma mark -
 #pragma mark Boilerplate code
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -121,6 +128,7 @@
     // Release any retained subviews of the main view.
 }
 
+#pragma mark -
 #pragma mark Autorotate to orientation - REMEMBER TO IMPLEMENT IN ALL VC's
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

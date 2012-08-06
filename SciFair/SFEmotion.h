@@ -10,4 +10,6 @@
 
 @interface SFEmotion : NSObject
 
+@property (strong, nonatomic) NSDictionary *emotionInfo;
+
 @end
