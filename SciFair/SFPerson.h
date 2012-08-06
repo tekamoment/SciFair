@@ -14,6 +14,7 @@
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSNumber *points;
 @property (nonatomic, retain) NSString *year;
+@property (nonatomic, retain) NSMutableDictionary *answers;
 
 + (SFPerson *)testSubject;
 

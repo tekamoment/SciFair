@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Answers" syncable="YES">
+        <attribute name="answer1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer14" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answerHolder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="answers" inverseEntity="Person" syncable="YES"/>
+    </entity>
     <entity name="Emotion" representedClassName="Emotion" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
@@ -11,7 +28,8 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="points" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="averageTimes" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Times" inverseName="newRelationship" inverseEntity="Times" syncable="YES"/>
+        <relationship name="answers" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Answers" inverseName="answerHolder" inverseEntity="Answers" syncable="YES"/>
+        <relationship name="averageTimes" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Times" inverseName="timeHolder" inverseEntity="Times" syncable="YES"/>
     </entity>
     <entity name="Times" representedClassName="Times" syncable="YES">
         <attribute name="averageTime" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -20,11 +38,21 @@
         <attribute name="image3time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="image4time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="image5time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="newRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="averageTimes" inverseEntity="Person" syncable="YES"/>
+        <attribute name="image6time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image7time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image8time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image9time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image10time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image11time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image12time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image13time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="image14time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="timeHolder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="averageTimes" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
         <element name="Emotion" positionX="-180" positionY="-144" width="128" height="103"/>
         <element name="Person" positionX="0" positionY="0" width="128" height="118"/>
-        <element name="Times" positionX="-164" positionY="41" width="128" height="148"/>
+        <element name="Times" positionX="-171" positionY="113" width="128" height="283"/>
+        <element name="Answers" positionX="198" positionY="-112" width="128" height="268"/>
     </elements>
 </model>

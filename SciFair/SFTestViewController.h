@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFPerson.h"
+#import "SFEmotion.h"
 
-@interface SFTestViewController : UIViewController
+@interface SFTestViewController : UIViewController {
+    int currentQuestionIndex;
+    int questionsCorrect;
+}
 
 @end

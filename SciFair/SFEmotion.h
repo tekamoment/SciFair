@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSDictionary *emotionInfo;
 
++(SFEmotion *)emotionsDict;
+
 @end
