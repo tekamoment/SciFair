@@ -1,5 +1,5 @@
 //
-//  SFTestViewController.h
+//  SFMainResultsViewController.h
 //  SciFair
 //
 //  Created by Carlos Arcenas on 8/6/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SFTestViewController : UIViewController
+@interface SFMainResultsViewController : UIViewController
 
 @end

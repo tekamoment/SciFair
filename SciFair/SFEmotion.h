@@ -1,13 +1,13 @@
 //
-//  SFTestViewController.h
+//  SFEmotion.h
 //  SciFair
 //
 //  Created by Carlos Arcenas on 8/6/12.
 //  Copyright (c) 2012 Carlos Arcenas. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface SFTestViewController : UIViewController
+@interface SFEmotion : NSObject
 
 @end

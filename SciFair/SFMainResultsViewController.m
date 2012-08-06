@@ -1,25 +1,18 @@
 //
-//  SFTestViewController.m
+//  SFMainResultsViewController.m
 //  SciFair
 //
 //  Created by Carlos Arcenas on 8/6/12.
 //  Copyright (c) 2012 Carlos Arcenas. All rights reserved.
 //
 
-#import "SFTestViewController.h"
-// CHECK BNR OBJC BOOK FOR HOW TO USE A TIMER
-@interface SFTestViewController ()
-@property (nonatomic) NSTimer *timer;
-@property (weak, nonatomic) IBOutlet UIImageView *emotionImage;
+#import "SFMainResultsViewController.h"
+
+@interface SFMainResultsViewController ()
 
 @end
 
-@implementation SFTestViewController
-@synthesize emotionImage;
-
-// IB ACTION - BUTTON PRESSED
-
-#pragma mark Boilerplate code
+@implementation SFMainResultsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +31,6 @@
 
 - (void)viewDidUnload
 {
-   
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

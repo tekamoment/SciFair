@@ -18,7 +18,9 @@
 		180DA6B015CD8C830029E9C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180DA6AF15CD8C830029E9C2 /* CoreData.framework */; };
 		180DA6B315CD8C9A0029E9C2 /* SciFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */; };
 		183CE8A515CEDB89009F8B58 /* SFTestHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8A415CEDB89009F8B58 /* SFTestHelpViewController.m */; };
-		183CE8A915CEDBC0009F8B58 /* SFTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8A815CEDBC0009F8B58 /* SFTestViewController.m */; };
+		183CE8AC15CF4C5F009F8B58 /* SFMainResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */; };
+		183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */; };
+		183CE8B215CF5BE9009F8B58 /* SFEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8B115CF5BE9009F8B58 /* SFEmotion.m */; };
 		187AECE715CE7DB400077710 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE615CE7DB400077710 /* Times.m */; };
 		187AECEA15CE7DB400077710 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE915CE7DB400077710 /* Person.m */; };
 		187AECED15CE7DB500077710 /* Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECEC15CE7DB500077710 /* Emotion.m */; };
@@ -44,8 +46,12 @@
 		180DA6B215CD8C9A0029E9C2 /* SciFair.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SciFair.xcdatamodel; sourceTree = "<group>"; };
 		183CE8A315CEDB89009F8B58 /* SFTestHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestHelpViewController.h; sourceTree = "<group>"; };
 		183CE8A415CEDB89009F8B58 /* SFTestHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestHelpViewController.m; sourceTree = "<group>"; };
-		183CE8A715CEDBC0009F8B58 /* SFTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestViewController.h; sourceTree = "<group>"; };
-		183CE8A815CEDBC0009F8B58 /* SFTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestViewController.m; sourceTree = "<group>"; };
+		183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainResultsViewController.h; sourceTree = "<group>"; };
+		183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMainResultsViewController.m; sourceTree = "<group>"; };
+		183CE8AD15CF5B49009F8B58 /* SFTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestViewController.h; sourceTree = "<group>"; };
+		183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestViewController.m; sourceTree = "<group>"; };
+		183CE8B015CF5BE9009F8B58 /* SFEmotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFEmotion.h; sourceTree = "<group>"; };
+		183CE8B115CF5BE9009F8B58 /* SFEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEmotion.m; sourceTree = "<group>"; };
 		187AECE515CE7DB400077710 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
 		187AECE615CE7DB400077710 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
 		187AECE815CE7DB400077710 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -107,8 +113,10 @@
 				180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */,
 				180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */,
 				180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */,
-				183CE8A715CEDBC0009F8B58 /* SFTestViewController.h */,
-				183CE8A815CEDBC0009F8B58 /* SFTestViewController.m */,
+				183CE8B015CF5BE9009F8B58 /* SFEmotion.h */,
+				183CE8B115CF5BE9009F8B58 /* SFEmotion.m */,
+				183CE8AD15CF5B49009F8B58 /* SFTestViewController.h */,
+				183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */,
 				183CE8A315CEDB89009F8B58 /* SFTestHelpViewController.h */,
 				183CE8A415CEDB89009F8B58 /* SFTestHelpViewController.m */,
 				18858EBF15CE1F3C006F50E8 /* SFDataEntryViewController.h */,
@@ -117,6 +125,8 @@
 				180DA6A815CD8AE70029E9C2 /* SFViewController.m */,
 				18858EBC15CE1CC6006F50E8 /* SFPerson.h */,
 				18858EBD15CE1CC6006F50E8 /* SFPerson.m */,
+				183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */,
+				183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */,
 				187AECEE15CEC83500077710 /* Core Data */,
 				180DA69915CD8AE60029E9C2 /* Supporting Files */,
 			);
@@ -222,7 +232,9 @@
 				187AECEA15CE7DB400077710 /* Person.m in Sources */,
 				187AECED15CE7DB500077710 /* Emotion.m in Sources */,
 				183CE8A515CEDB89009F8B58 /* SFTestHelpViewController.m in Sources */,
-				183CE8A915CEDBC0009F8B58 /* SFTestViewController.m in Sources */,
+				183CE8AC15CF4C5F009F8B58 /* SFMainResultsViewController.m in Sources */,
+				183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */,
+				183CE8B215CF5BE9009F8B58 /* SFEmotion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

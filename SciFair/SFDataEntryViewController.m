@@ -21,6 +21,8 @@
 @synthesize genderControl;
 @synthesize yearControl;
 
+#pragma mark UITextField protocol implementations
+
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     if (theTextField == self.textField) {
         // Create variables to store this? Create an init for test subject, then call it before segue?
@@ -31,6 +33,8 @@
     }
     return YES;
 }
+
+#pragma mark Data input -- DONE --
 
 - (void)genderChanged {
     if (self.genderControl.selectedSegmentIndex == 1) [[SFPerson testSubject] setGender:@"Girl"];
@@ -80,6 +84,13 @@
     }
 }
 
+- (IBAction)continuePressed:(UIButton *)sender {
+    NSLog(@"Name: %@, Gender: %@, Year: %@.",[[SFPerson testSubject] name], [[SFPerson testSubject] gender], [[SFPerson testSubject] year]);
+}
+
+
+#pragma mark Boilerplate code
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -110,9 +121,15 @@
     // Release any retained subviews of the main view.
 }
 
+#pragma mark Autorotate to orientation - REMEMBER TO IMPLEMENT IN ALL VC's
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+    if ((interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)) {
+        return NO;
+    } else {
+        return YES;
+    }
 }
 
 @end
