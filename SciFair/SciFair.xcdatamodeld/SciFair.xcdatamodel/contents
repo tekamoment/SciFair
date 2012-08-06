@@ -23,8 +23,8 @@
         <relationship name="newRelationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="averageTimes" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Emotion" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Person" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Times" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Emotion" positionX="-180" positionY="-144" width="128" height="103"/>
+        <element name="Person" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="Times" positionX="-164" positionY="41" width="128" height="148"/>
     </elements>
 </model>
