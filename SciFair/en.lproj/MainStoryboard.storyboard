@@ -29,7 +29,7 @@
                         <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version 0.0.3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GtJ-uJ-bbt">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version 0.0.5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GtJ-uJ-bbt">
                                 <rect key="frame" x="619" y="455" width="260" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -88,6 +88,13 @@
                                     <segue destination="98P-7P-2tI" kind="push" id="PWr-t1-M4g"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Carlos Arcenas &amp; Tae Hoon Kim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9el-Ji-5Ev">
+                                <rect key="frame" x="72" y="400" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -98,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="-31" y="89"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Men-->
         <scene sceneID="zy8-JO-z7Q">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnj-bb-Ody" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -109,10 +116,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ZSD-37-DCz"/>
+                    <tabBarItem key="tabBarItem" title="Men" id="ZSD-37-DCz"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2451" y="2528"/>
+        </scene>
+        <!--View Controller - Women-->
+        <scene sceneID="krd-Wy-h9p">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAh-L2-Y8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Wzc-ax-elU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4uG-Er-Edg">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="655"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Women" id="iaE-yU-xfR"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2451" y="3581"/>
         </scene>
         <!--Main Results View Controller - Main-->
         <scene sceneID="AEn-6L-7qc">
@@ -135,7 +158,17 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhw-Tg-7nO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="uaE-YX-Efy" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9qT-G1-vMc"/>
+                    <navigationItem key="navigationItem" id="9qT-G1-vMc">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="PhQ-Xz-h0z">
+                            <rect key="frame" x="307" y="7" width="409" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Vpf-6A-qQC">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -145,6 +178,7 @@
                     <connections>
                         <segue destination="yGB-qD-dvg" kind="relationship" relationship="viewControllers" id="nYb-cU-KwZ"/>
                         <segue destination="bMg-gT-cfy" kind="relationship" relationship="viewControllers" id="5l7-Hh-9Yi"/>
+                        <segue destination="Wzc-ax-elU" kind="relationship" relationship="viewControllers" id="Rka-Fn-vSj"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -159,7 +193,7 @@
                         <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="zsO-aj-QOD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="zsO-aj-QOD">
                                 <rect key="frame" x="509" y="127" width="260" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -216,7 +250,6 @@
                                 </state>
                                 <connections>
                                     <action selector="continuePressed:" destination="lAl-kt-t0S" eventType="touchUpInside" id="gQO-qA-ZIu"/>
-                                    <segue destination="XzI-hv-kuZ" kind="push" id="rOg-pJ-Ra9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tQj-kc-xWa">
@@ -242,6 +275,7 @@
                         <outlet property="genderControl" destination="c58-w4-2b2" id="eub-kz-kdk"/>
                         <outlet property="textField" destination="zsO-aj-QOD" id="wMg-dl-rNa"/>
                         <outlet property="yearControl" destination="SC5-0y-qe7" id="3hp-Xa-rlp"/>
+                        <segue destination="XzI-hv-kuZ" kind="push" identifier="testHelpSegue" id="e0z-p3-MUy"/>
                     </connections>
                 </viewController>
             </objects>
@@ -283,18 +317,18 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="xDO-Kx-TLZ" kind="push" identifier="startTestSegue" id="Hkv-Mf-ZRT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="fLM-CD-DJV"/>
-                    <connections>
-                        <segue destination="xDO-Kx-TLZ" kind="push" identifier="startTestSegue" id="zMp-SO-n6e"/>
-                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2435" y="-1024"/>
+            <point key="canvasLocation" x="2434" y="-998"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="ZrO-Nl-302">
@@ -306,7 +340,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="YCT-6h-883">
-                                <rect key="frame" x="0.0" y="48" width="1024" height="540"/>
+                                <rect key="frame" x="0.0" y="48" width="1024" height="512"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LzW-AW-yHy">
@@ -400,17 +434,50 @@
                     <navigationItem key="navigationItem" id="LXS-Mi-ck3"/>
                     <connections>
                         <outlet property="emotionImage" destination="YCT-6h-883" id="sec-6P-O2D"/>
+                        <segue destination="n4l-EU-9dY" kind="push" identifier="testFinishedSegue" id="Zei-6D-CUh"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3593" y="-1024"/>
+            <point key="canvasLocation" x="3623" y="-998"/>
+        </scene>
+        <!--Test Finished View Controller-->
+        <scene sceneID="Y3T-g3-2vV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuF-ra-Qwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="n4l-EU-9dY" customClass="SFTestFinishedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XmJ-rZ-fw7">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yfc-0k-mAl">
+                                <rect key="frame" x="611" y="444" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="n4l-EU-9dY" eventType="touchUpInside" id="ws6-15-grG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RXR-Tf-04e"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4860" y="-998"/>
         </scene>
     </scenes>
     <classes>
         <class className="SFDataEntryViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SFDataEntryViewController.h"/>
             <relationships>
-                <relationship kind="action" name="continuePressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="genderControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="yearControl" candidateClass="UISegmentedControl"/>
@@ -418,6 +485,9 @@
         </class>
         <class className="SFMainResultsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SFMainResultsViewController.h"/>
+        </class>
+        <class className="SFTestFinishedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SFTestFinishedViewController.h"/>
         </class>
         <class className="SFTestHelpViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SFTestHelpViewController.h"/>

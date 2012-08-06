@@ -87,11 +87,11 @@
 
 - (IBAction)continuePressed:(UIButton *)sender {
     if (![[SFPerson testSubject] gender] || ![[SFPerson testSubject] name] || ![[SFPerson testSubject] year]) {
-#pragma mark - IMPLEMENT ALERT FOR NON COMPLETION OF FIELDS -- STOP SEGUE
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Stuff left!" message:@"You still have stuff to put in." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];    
     } else {
     NSLog(@"Name: %@, Gender: %@, Year: %@.",[[SFPerson testSubject] name], [[SFPerson testSubject] gender], [[SFPerson testSubject] year]);
+        [self performSegueWithIdentifier:@"testHelpSegue" sender:self];
     }
 }
 

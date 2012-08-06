@@ -33,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.emotionImage.image = [UIImage imageNamed:@"emohappy@2x.png"];
 	// Do any additional setup after loading the view.
 }
 
