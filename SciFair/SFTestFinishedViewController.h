@@ -10,6 +10,6 @@
 
 @interface SFTestFinishedViewController : UIViewController
 
-@property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,strong, readonly) NSManagedObjectContext *managedObjectContext;
 
 @end

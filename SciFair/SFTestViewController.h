@@ -7,15 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SFPerson.h"
-#import "SFEmotion.h"
+
 
 @interface SFTestViewController : UIViewController {
     int currentQuestionIndex;
     int questionsCorrect;
     float timef;
     NSTimer *timer;
-
 }
 
 @end

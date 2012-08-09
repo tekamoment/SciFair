@@ -11,6 +11,7 @@
 @interface SFTimes : NSObject
 
 @property (nonatomic, retain) NSMutableDictionary *times;
+@property (readonly, retain) NSNumber *averageSFTime;
 
 + (SFTimes *)cumulativeTimes;
 

@@ -15,6 +15,8 @@ static SFTimes *cumulativeTimes;
 + (SFTimes *)cumulativeTimes {
     if (!cumulativeTimes) {
         cumulativeTimes = [[SFTimes alloc] init];
+        NSMutableDictionary *holder = [NSMutableDictionary dictionaryWithCapacity:15];
+        [cumulativeTimes setTimes:holder];
     }
     return cumulativeTimes;
 }

@@ -2,7 +2,7 @@
 //  Times.m
 //  SciFair
 //
-//  Created by Carlos Arcenas on 8/5/12.
+//  Created by Carlos Arcenas on 8/9/12.
 //  Copyright (c) 2012 Carlos Arcenas. All rights reserved.
 //
 
@@ -12,12 +12,21 @@
 
 @implementation Times
 
-@dynamic averageTime;
-@dynamic image1time;
+@dynamic image14time;
+@dynamic image9time;
 @dynamic image2time;
 @dynamic image3time;
 @dynamic image4time;
 @dynamic image5time;
-@dynamic newRelationship;
+@dynamic averageTime;
+@dynamic image1time;
+@dynamic image6time;
+@dynamic image7time;
+@dynamic image8time;
+@dynamic image10time;
+@dynamic image11time;
+@dynamic image12time;
+@dynamic image13time;
+@dynamic timeHolder;
 
 @end

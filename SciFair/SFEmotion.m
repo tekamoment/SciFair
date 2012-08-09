@@ -14,8 +14,8 @@ static SFEmotion *emotionsDict;
 
 + (SFEmotion *)emotionsDict{
     if (!emotionsDict) {
-        NSArray *pics = @[ [UIImage imageNamed:@"emohappy@2x.png"], @"Happy" ];
-        NSArray *emos = @[ @"image1", @"image1Emotion" ];
+        NSArray *pics = @[ [UIImage imageNamed:@"emohappy@2x.png"], @"Happy", [UIImage imageNamed:@"emosad@2x.png"], @"Sad", [UIImage imageNamed:@"emoangry@2x.png"], @"Angry", [UIImage imageNamed:@"emosleepy@2x.png"], @"Sleepy", [UIImage imageNamed:@"emothoughtful@2x.png"], @"Thoughtful", [UIImage imageNamed:@"emosurprised@2x.png"], @"Surprised" ];
+        NSArray *emos = @[ @"image1", @"image1Emotion", @"image2", @"image2Emotion", @"image3", @"image3Emotion", @"image4", @"image4Emotion", @"image5", @"image5Emotion", @"image6", @"image6Emotion" ];
         NSDictionary *holder = [[NSDictionary alloc] initWithObjects:pics forKeys:emos];
      emotionsDict = [[SFEmotion alloc] init];
         [emotionsDict setEmotionInfo:holder];

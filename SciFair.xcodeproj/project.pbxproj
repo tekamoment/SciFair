@@ -16,17 +16,23 @@
 		180DA6A615CD8AE70029E9C2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */; };
 		180DA6A915CD8AE70029E9C2 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6A815CD8AE70029E9C2 /* SFViewController.m */; };
 		180DA6B015CD8C830029E9C2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180DA6AF15CD8C830029E9C2 /* CoreData.framework */; };
-		180DA6B315CD8C9A0029E9C2 /* SciFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */; };
 		183CE8A515CEDB89009F8B58 /* SFTestHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8A415CEDB89009F8B58 /* SFTestHelpViewController.m */; };
 		183CE8AC15CF4C5F009F8B58 /* SFMainResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */; };
 		183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */; };
 		183CE8B215CF5BE9009F8B58 /* SFEmotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8B115CF5BE9009F8B58 /* SFEmotion.m */; };
 		183E3BD215D020B500E50157 /* SFTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3BD115D020B500E50157 /* SFTimes.m */; };
+		183E3BD915D02D0000E50157 /* emosurprised@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD415D02CFF00E50157 /* emosurprised@2x.png */; };
+		183E3BDA15D02D0000E50157 /* emothoughtful@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD515D02CFF00E50157 /* emothoughtful@2x.png */; };
+		183E3BDB15D02D0000E50157 /* emosleepy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD615D02CFF00E50157 /* emosleepy@2x.png */; };
+		183E3BDC15D02D0000E50157 /* emoangry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD715D02CFF00E50157 /* emoangry@2x.png */; };
+		183E3BDD15D02D0000E50157 /* emosad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD815D02D0000E50157 /* emosad@2x.png */; };
+		183E3C1C15D400D100E50157 /* Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C1B15D400D100E50157 /* Emotion.m */; };
+		183E3C1F15D400D300E50157 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C1E15D400D200E50157 /* Times.m */; };
+		183E3C2215D400D300E50157 /* Answers.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C2115D400D300E50157 /* Answers.m */; };
+		183E3C2515D400D400E50157 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C2415D400D400E50157 /* Person.m */; };
+		183E3C5215D4218F00E50157 /* SciFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */; };
 		1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1874134A15CFD57C00E48B50 /* emohappy@2x.png */; };
 		1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */; };
-		187AECE715CE7DB400077710 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE615CE7DB400077710 /* Times.m */; };
-		187AECEA15CE7DB400077710 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECE915CE7DB400077710 /* Person.m */; };
-		187AECED15CE7DB500077710 /* Emotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 187AECEC15CE7DB500077710 /* Emotion.m */; };
 		18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EBD15CE1CC6006F50E8 /* SFPerson.m */; };
 		18858EC115CE1F3C006F50E8 /* SFDataEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EC015CE1F3C006F50E8 /* SFDataEntryViewController.m */; };
 /* End PBXBuildFile section */
@@ -57,15 +63,22 @@
 		183CE8B115CF5BE9009F8B58 /* SFEmotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFEmotion.m; sourceTree = "<group>"; };
 		183E3BD015D020B500E50157 /* SFTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFTimes.h; path = ../SFTimes.h; sourceTree = "<group>"; };
 		183E3BD115D020B500E50157 /* SFTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFTimes.m; path = ../SFTimes.m; sourceTree = "<group>"; };
+		183E3BD415D02CFF00E50157 /* emosurprised@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emosurprised@2x.png"; sourceTree = "<group>"; };
+		183E3BD515D02CFF00E50157 /* emothoughtful@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emothoughtful@2x.png"; sourceTree = "<group>"; };
+		183E3BD615D02CFF00E50157 /* emosleepy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emosleepy@2x.png"; sourceTree = "<group>"; };
+		183E3BD715D02CFF00E50157 /* emoangry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoangry@2x.png"; sourceTree = "<group>"; };
+		183E3BD815D02D0000E50157 /* emosad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emosad@2x.png"; sourceTree = "<group>"; };
+		183E3C1A15D400D000E50157 /* Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emotion.h; sourceTree = "<group>"; };
+		183E3C1B15D400D100E50157 /* Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emotion.m; sourceTree = "<group>"; };
+		183E3C1D15D400D200E50157 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
+		183E3C1E15D400D200E50157 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
+		183E3C2015D400D300E50157 /* Answers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answers.h; sourceTree = "<group>"; };
+		183E3C2115D400D300E50157 /* Answers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answers.m; sourceTree = "<group>"; };
+		183E3C2315D400D400E50157 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		183E3C2415D400D400E50157 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1874134A15CFD57C00E48B50 /* emohappy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emohappy@2x.png"; sourceTree = "<group>"; };
 		1874134C15CFD84E00E48B50 /* SFTestFinishedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestFinishedViewController.h; sourceTree = "<group>"; };
 		1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestFinishedViewController.m; sourceTree = "<group>"; };
-		187AECE515CE7DB400077710 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
-		187AECE615CE7DB400077710 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
-		187AECE815CE7DB400077710 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		187AECE915CE7DB400077710 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		187AECEB15CE7DB500077710 /* Emotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Emotion.h; sourceTree = "<group>"; };
-		187AECEC15CE7DB500077710 /* Emotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Emotion.m; sourceTree = "<group>"; };
 		18858EBC15CE1CC6006F50E8 /* SFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPerson.h; sourceTree = "<group>"; };
 		18858EBD15CE1CC6006F50E8 /* SFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPerson.m; sourceTree = "<group>"; };
 		18858EBF15CE1F3C006F50E8 /* SFDataEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataEntryViewController.h; sourceTree = "<group>"; };
@@ -77,10 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180DA6B015CD8C830029E9C2 /* CoreData.framework in Frameworks */,
 				180DA69315CD8AE60029E9C2 /* UIKit.framework in Frameworks */,
 				180DA69515CD8AE60029E9C2 /* Foundation.framework in Frameworks */,
 				180DA69715CD8AE60029E9C2 /* CoreGraphics.framework in Frameworks */,
+				180DA6B015CD8C830029E9C2 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,20 +131,16 @@
 		180DA69815CD8AE60029E9C2 /* SciFair */ = {
 			isa = PBXGroup;
 			children = (
-				183E3BD015D020B500E50157 /* SFTimes.h */,
-				183E3BD115D020B500E50157 /* SFTimes.m */,
-				1874134A15CFD57C00E48B50 /* emohappy@2x.png */,
 				180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */,
 				180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */,
 				180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */,
-				183CE8B015CF5BE9009F8B58 /* SFEmotion.h */,
-				183CE8B115CF5BE9009F8B58 /* SFEmotion.m */,
 				180DA6A715CD8AE70029E9C2 /* SFViewController.h */,
 				180DA6A815CD8AE70029E9C2 /* SFViewController.m */,
-				18858EBC15CE1CC6006F50E8 /* SFPerson.h */,
-				18858EBD15CE1CC6006F50E8 /* SFPerson.m */,
 				183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */,
 				183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */,
+				180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */,
+				183E3BE015D0F05100E50157 /* Emotion (Placeholders) */,
+				183E3BDF15D0F02A00E50157 /* Core Objects */,
 				1874134F15CFD99F00E48B50 /* Test controllers */,
 				187AECEE15CEC83500077710 /* Core Data */,
 				180DA69915CD8AE60029E9C2 /* Supporting Files */,
@@ -148,6 +157,32 @@
 				180DA6A015CD8AE70029E9C2 /* SciFair-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		183E3BDF15D0F02A00E50157 /* Core Objects */ = {
+			isa = PBXGroup;
+			children = (
+				183E3BD015D020B500E50157 /* SFTimes.h */,
+				183E3BD115D020B500E50157 /* SFTimes.m */,
+				183CE8B015CF5BE9009F8B58 /* SFEmotion.h */,
+				183CE8B115CF5BE9009F8B58 /* SFEmotion.m */,
+				18858EBC15CE1CC6006F50E8 /* SFPerson.h */,
+				18858EBD15CE1CC6006F50E8 /* SFPerson.m */,
+			);
+			name = "Core Objects";
+			sourceTree = "<group>";
+		};
+		183E3BE015D0F05100E50157 /* Emotion (Placeholders) */ = {
+			isa = PBXGroup;
+			children = (
+				183E3BD515D02CFF00E50157 /* emothoughtful@2x.png */,
+				183E3BD415D02CFF00E50157 /* emosurprised@2x.png */,
+				183E3BD615D02CFF00E50157 /* emosleepy@2x.png */,
+				183E3BD715D02CFF00E50157 /* emoangry@2x.png */,
+				183E3BD815D02D0000E50157 /* emosad@2x.png */,
+				1874134A15CFD57C00E48B50 /* emohappy@2x.png */,
+			);
+			name = "Emotion (Placeholders)";
 			sourceTree = "<group>";
 		};
 		1874134F15CFD99F00E48B50 /* Test controllers */ = {
@@ -168,13 +203,14 @@
 		187AECEE15CEC83500077710 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				187AECEB15CE7DB500077710 /* Emotion.h */,
-				187AECEC15CE7DB500077710 /* Emotion.m */,
-				187AECE815CE7DB400077710 /* Person.h */,
-				187AECE915CE7DB400077710 /* Person.m */,
-				187AECE515CE7DB400077710 /* Times.h */,
-				187AECE615CE7DB400077710 /* Times.m */,
-				180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */,
+				183E3C2315D400D400E50157 /* Person.h */,
+				183E3C2415D400D400E50157 /* Person.m */,
+				183E3C2015D400D300E50157 /* Answers.h */,
+				183E3C2115D400D300E50157 /* Answers.m */,
+				183E3C1D15D400D200E50157 /* Times.h */,
+				183E3C1E15D400D200E50157 /* Times.m */,
+				183E3C1A15D400D000E50157 /* Emotion.h */,
+				183E3C1B15D400D100E50157 /* Emotion.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -234,6 +270,11 @@
 				180DA69D15CD8AE60029E9C2 /* InfoPlist.strings in Resources */,
 				180DA6A615CD8AE70029E9C2 /* MainStoryboard.storyboard in Resources */,
 				1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */,
+				183E3BD915D02D0000E50157 /* emosurprised@2x.png in Resources */,
+				183E3BDA15D02D0000E50157 /* emothoughtful@2x.png in Resources */,
+				183E3BDB15D02D0000E50157 /* emosleepy@2x.png in Resources */,
+				183E3BDC15D02D0000E50157 /* emoangry@2x.png in Resources */,
+				183E3BDD15D02D0000E50157 /* emosad@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,18 +288,19 @@
 				180DA69F15CD8AE60029E9C2 /* main.m in Sources */,
 				180DA6A315CD8AE70029E9C2 /* SFAppDelegate.m in Sources */,
 				180DA6A915CD8AE70029E9C2 /* SFViewController.m in Sources */,
-				180DA6B315CD8C9A0029E9C2 /* SciFair.xcdatamodeld in Sources */,
 				18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */,
 				18858EC115CE1F3C006F50E8 /* SFDataEntryViewController.m in Sources */,
-				187AECE715CE7DB400077710 /* Times.m in Sources */,
-				187AECEA15CE7DB400077710 /* Person.m in Sources */,
-				187AECED15CE7DB500077710 /* Emotion.m in Sources */,
 				183CE8A515CEDB89009F8B58 /* SFTestHelpViewController.m in Sources */,
 				183CE8AC15CF4C5F009F8B58 /* SFMainResultsViewController.m in Sources */,
 				183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */,
 				183CE8B215CF5BE9009F8B58 /* SFEmotion.m in Sources */,
 				1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */,
 				183E3BD215D020B500E50157 /* SFTimes.m in Sources */,
+				183E3C1C15D400D100E50157 /* Emotion.m in Sources */,
+				183E3C1F15D400D300E50157 /* Times.m in Sources */,
+				183E3C2215D400D300E50157 /* Answers.m in Sources */,
+				183E3C2515D400D400E50157 /* Person.m in Sources */,
+				183E3C5215D4218F00E50157 /* SciFair.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

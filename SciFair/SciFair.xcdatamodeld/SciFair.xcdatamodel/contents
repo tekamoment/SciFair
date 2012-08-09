@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Answers" syncable="YES">
+    <entity name="Answers" representedClassName="Answers" syncable="YES">
         <attribute name="answer1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="answer2" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="answer3" optional="YES" attributeType="String" syncable="YES"/>
@@ -50,9 +50,9 @@
         <relationship name="timeHolder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="averageTimes" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Emotion" positionX="16" positionY="-121" width="128" height="103"/>
-        <element name="Person" positionX="0" positionY="0" width="128" height="133"/>
-        <element name="Times" positionX="-99" positionY="176" width="128" height="283"/>
+        <element name="Emotion" positionX="-180" positionY="-144" width="128" height="103"/>
+        <element name="Person" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="Times" positionX="-164" positionY="41" width="128" height="148"/>
         <element name="Answers" positionX="198" positionY="-112" width="128" height="268"/>
     </elements>
 </model>

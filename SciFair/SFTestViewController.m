@@ -7,6 +7,7 @@
 //
 
 #import "SFTestViewController.h"
+#import "SFPerson.h"
 #import "SFEmotion.h"
 #import "SFTimes.h"
 
@@ -14,6 +15,7 @@
 @interface SFTestViewController ()
 @property (nonatomic) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIImageView *emotionImage;
+@property (nonatomic, strong) NSNumber *avgTime;
 
 @end
 
@@ -22,10 +24,8 @@
 
 #pragma mark IB ACTION - BUTTON PRESSED
 - (IBAction)buttonPressed:(UIButton *)sender {
-    // IMPLEMENT NSTIMER HEREEEE
     NSString *answer = sender.currentTitle;
-        // consolidate this if-else? they do practially the same thing.
-    if ([answer isEqualToString: [[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionEmotionString:currentQuestionIndex]]]) {
+       if ([answer isEqualToString:[[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionEmotionString:currentQuestionIndex]]]) {
         NSLog(@"Yeah!");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
         questionsCorrect++;
@@ -36,12 +36,14 @@
         [self stopTimer: timer];
     }
     if (currentQuestionIndex < 15) {
+        NSLog(@"%d questions correct.", questionsCorrect);
     currentQuestionIndex++;
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionImageString:currentQuestionIndex]];
         [self startTimer];
     } else {
         NSNumber *score = [NSNumber numberWithInt:questionsCorrect];
         [[SFPerson testSubject] setPoints:score];
+        [self averageTime];
         [self performSegueWithIdentifier:@"testFinishedSegue" sender:self];
     }
 
@@ -49,24 +51,40 @@
 
 #pragma mark Timer methods
 - (void)startTimer{
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(increaseTimerCount) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(increaseTimerCount) userInfo:nil repeats:YES];
     [timer fire];
 }
 
 - (void)increaseTimerCount {
-    timef += 0.1;
+    timef += 0.01;
 }
 
 - (void)stopTimer:(NSTimer *)timeKeeper {
+    NSLog(@"It took you %.2f seconds.", timef);
     NSNumber *timens = [NSNumber numberWithFloat:timef];
     [[[SFTimes cumulativeTimes] times] setValue:timens forKey:[self timeNumberString:currentQuestionIndex]];
     [timeKeeper invalidate];
+    timef = 0.0;
+    NSLog(@"%@", [[[SFTimes cumulativeTimes] times] description]);
 }
 
+- (void)averageTime {
+    float tempAvgTime;
+    NSString *key;
+    for (key in [[SFTimes cumulativeTimes] times]) {
+        NSNumber *time = [[[SFTimes cumulativeTimes] times] objectForKey:key];
+        float floatTime = [time floatValue];
+        tempAvgTime += floatTime;
+    }
+    
+    float realAvgTime = tempAvgTime / 14;
+    [self setAvgTime:[NSNumber numberWithFloat:realAvgTime]];
+    [[[SFTimes cumulativeTimes] times] setValue:[self avgTime] forKey:@"averageTime"];
+}
 
 #pragma mark String generation methods
 - (NSString *) questionEmotionString:(int)index {
-    return [NSString stringWithFormat:@"image%demotion", index];
+    return [NSString stringWithFormat:@"image%dEmotion", index];
 }
 
 - (NSString *) questionImageString:(int)index {
@@ -100,6 +118,7 @@
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:@"image1"];
     currentQuestionIndex = 1;
     questionsCorrect = 0;
+#pragma mark // Do a "Test begins in..."?
     [self startTimer];
 	// Do any additional setup after loading the view.
 }
@@ -113,7 +132,11 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    if ((interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown)) {
+        return NO;
+    } else {
+        return YES;
+    }
 }
 
 @end
