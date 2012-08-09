@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SFAppDelegate.h"
 
-@interface SFTestFinishedViewController : UIViewController
+@interface SFTestFinishedViewController : UIViewController {
+    SFAppDelegate *app;
+}
 
-@property (nonatomic,strong, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
 
 @end

@@ -12,14 +12,13 @@
 #import "Person.h"
 #import "Times.h"
 #import "Answers.h"
-#import "SFAppDelegate.h"
 
 @interface SFTestFinishedViewController ()
 
 @end
 
 @implementation SFTestFinishedViewController
-@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectContext = managedObjectContext;
 
 - (IBAction)donePressed:(UIButton *)sender {
  
@@ -27,9 +26,9 @@
     [self commit];
     
     /*
-     NSManagedObject *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
-    NSManagedObject *newEntryAnswers = [NSEntityDescription insertNewObjectForEntityForName:@"Answers" inManagedObjectContext:context];
-    NSManagedObject *newEntryTimes = [NSEntityDescription insertNewObjectForEntityForName:@"Times" inManagedObjectContext:context];
+     NSManagedObject *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectmanagedObjectContext:managedObjectContext];
+    NSManagedObject *newEntryAnswers = [NSEntityDescription insertNewObjectForEntityForName:@"Answers" inManagedObjectmanagedObjectContext:managedObjectContext];
+    NSManagedObject *newEntryTimes = [NSEntityDescription insertNewObjectForEntityForName:@"Times" inManagedObjectmanagedObjectContext:managedObjectContext];
 
       
     [newEntry setValue:[[SFPerson testSubject] name] forKey:@"name"];
@@ -64,15 +63,15 @@
 }
 
 - (void)commit {
-    NSManagedObjectContext *context = [self managedObjectContext];
-    NSLog(@"%@", context);
-    Person *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:context];
+     
+    Person *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:app.managedObjectContext];
     newEntry.name = [[SFPerson testSubject] name];
     newEntry.gender = [[SFPerson testSubject] gender];
     newEntry.year = [[SFPerson testSubject] year];
     newEntry.points = [[SFPerson testSubject] points];
+     
     
-    Times *newEntryTimes = [NSEntityDescription insertNewObjectForEntityForName:@"Times" inManagedObjectContext:context];
+    Times *newEntryTimes = [NSEntityDescription insertNewObjectForEntityForName:@"Times" inManagedObjectContext:app.managedObjectContext];
     void(^addTimesToCoreData)(id, id, BOOL *);
     addTimesToCoreData = ^(id key, id obj, BOOL *stop) {
         NSNumber *time = [[[SFTimes cumulativeTimes] times] objectForKey:key];
@@ -80,8 +79,8 @@
     }; // fix to ensure booleans!!!!!!
     [[[SFTimes cumulativeTimes] times] enumerateKeysAndObjectsUsingBlock:addTimesToCoreData];
     
-    Answers *newEntryAnswers = [NSEntityDescription insertNewObjectForEntityForName:@"Answers" inManagedObjectContext:context];
-    
+
+    Answers *newEntryAnswers = [NSEntityDescription insertNewObjectForEntityForName:@"Answers" inManagedObjectContext:app.managedObjectContext];
     void (^addToCoreData)(id, id, BOOL *);
     addToCoreData = ^(id key, id obj, BOOL *stop) {
         //for (NSString *key in [[SFPerson testSubject] answers]) {
@@ -97,6 +96,7 @@
     newEntryTimes.timeHolder = newEntry;
     
     NSLog(@"%@, %@, %@.", newEntry, newEntryAnswers, newEntryTimes);
+     
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -111,14 +111,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    if (managedObjectContext == nil)
-    {
-        managedObjectContext = [(SFAppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
-        NSLog(@"After managedObjectContext: %@",  managedObjectContext);
-    }
 	// Do any additional setup after loading the view.
-
+    app = (SFAppDelegate*)[UIApplication sharedApplication].delegate;
      
 }
 

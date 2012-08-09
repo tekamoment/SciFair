@@ -15,6 +15,8 @@ static SFPerson *testSubject;
 + (SFPerson *)testSubject{
     if (!testSubject) {
         testSubject = [[SFPerson alloc] init];
+        NSMutableDictionary *holder = [NSMutableDictionary dictionaryWithCapacity:15];
+        [testSubject setAnswers:holder];
     }
     return testSubject;
 }

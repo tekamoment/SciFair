@@ -25,9 +25,11 @@
 #pragma mark IB ACTION - BUTTON PRESSED
 - (IBAction)buttonPressed:(UIButton *)sender {
     NSString *answer = sender.currentTitle;
+    if (currentQuestionIndex < 15) {
        if ([answer isEqualToString:[[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionEmotionString:currentQuestionIndex]]]) {
         NSLog(@"Yeah!");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
+           NSLog(@"%@", [[SFPerson testSubject]answers]);
         questionsCorrect++;
         [self stopTimer:timer];
     } else {
@@ -35,7 +37,6 @@
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
         [self stopTimer: timer];
     }
-    if (currentQuestionIndex < 15) {
         NSLog(@"%d questions correct.", questionsCorrect);
     currentQuestionIndex++;
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionImageString:currentQuestionIndex]];
@@ -65,11 +66,11 @@
     [[[SFTimes cumulativeTimes] times] setValue:timens forKey:[self timeNumberString:currentQuestionIndex]];
     [timeKeeper invalidate];
     timef = 0.0;
-    NSLog(@"%@", [[[SFTimes cumulativeTimes] times] description]);
+    //NSLog(@"%@", [[[SFTimes cumulativeTimes] times] description]);
 }
 
 - (void)averageTime {
-    float tempAvgTime;
+    float tempAvgTime = 0;
     NSString *key;
     for (key in [[SFTimes cumulativeTimes] times]) {
         NSNumber *time = [[[SFTimes cumulativeTimes] times] objectForKey:key];
