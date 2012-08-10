@@ -29,7 +29,6 @@
        if ([answer isEqualToString:[[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionEmotionString:currentQuestionIndex]]]) {
         NSLog(@"Yeah!");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
-           NSLog(@"%@", [[SFPerson testSubject]answers]);
         questionsCorrect++;
         [self stopTimer:timer];
     } else {
@@ -45,6 +44,7 @@
         NSNumber *score = [NSNumber numberWithInt:questionsCorrect];
         [[SFPerson testSubject] setPoints:score];
         [self averageTime];
+        [self totalTime];
         [self performSegueWithIdentifier:@"testFinishedSegue" sender:self];
     }
 
@@ -82,6 +82,19 @@
     [self setAvgTime:[NSNumber numberWithFloat:realAvgTime]];
     [[[SFTimes cumulativeTimes] times] setValue:[self avgTime] forKey:@"averageTime"];
 }
+
+- (void)totalTime {
+    float tempTotalTime = 0;
+    NSString *key;
+    for (key in [[SFTimes cumulativeTimes] times]) {
+        NSNumber *time = [[[SFTimes cumulativeTimes] times] objectForKey:key];
+        float floatTime = [time floatValue];
+        tempTotalTime += floatTime;
+    }
+        NSNumber *totalTime = [NSNumber numberWithFloat:tempTotalTime];
+        [[[SFTimes cumulativeTimes] times] setValue:totalTime forKey:@"totalTime"];
+}
+
 
 #pragma mark String generation methods
 - (NSString *) questionEmotionString:(int)index {

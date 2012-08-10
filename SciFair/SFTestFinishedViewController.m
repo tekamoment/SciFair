@@ -18,12 +18,15 @@
 @end
 
 @implementation SFTestFinishedViewController
+
 @synthesize managedObjectContext = managedObjectContext;
 
 - (IBAction)donePressed:(UIButton *)sender {
  
     
     [self commit];
+    [[self navigationController] popToRootViewControllerAnimated:YES];
+
     
     /*
      NSManagedObject *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectmanagedObjectContext:managedObjectContext];
@@ -113,7 +116,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     app = (SFAppDelegate*)[UIApplication sharedApplication].delegate;
-     
+    //self.resultText.text = [NSString stringWithFormat:@"You scored %@ points and took %@ seconds to do so.", [[SFPerson testSubject] points], [[[SFTimes cumulativeTimes] times] objectForKey:@"totalTime"]  ];
 }
 
 - (void)viewDidUnload

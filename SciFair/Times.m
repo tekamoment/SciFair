@@ -27,6 +27,7 @@
 @dynamic image11time;
 @dynamic image12time;
 @dynamic image13time;
+@dynamic totalTime;
 @dynamic timeHolder;
 
 @end

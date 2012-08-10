@@ -27,9 +27,9 @@
 		183E3BDC15D02D0000E50157 /* emoangry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD715D02CFF00E50157 /* emoangry@2x.png */; };
 		183E3BDD15D02D0000E50157 /* emosad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 183E3BD815D02D0000E50157 /* emosad@2x.png */; };
 		183E3C5215D4218F00E50157 /* SciFair.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */; };
-		183E3C5815D42D9400E50157 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C5715D42D9300E50157 /* Times.m */; };
 		183E3C5B15D42D9500E50157 /* Answers.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C5A15D42D9500E50157 /* Answers.m */; };
 		183E3C5E15D42D9700E50157 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C5D15D42D9600E50157 /* Person.m */; };
+		183E3C6515D43BD300E50157 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C6415D43BD100E50157 /* Times.m */; };
 		1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1874134A15CFD57C00E48B50 /* emohappy@2x.png */; };
 		1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */; };
 		18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EBD15CE1CC6006F50E8 /* SFPerson.m */; };
@@ -67,12 +67,13 @@
 		183E3BD615D02CFF00E50157 /* emosleepy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emosleepy@2x.png"; sourceTree = "<group>"; };
 		183E3BD715D02CFF00E50157 /* emoangry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoangry@2x.png"; sourceTree = "<group>"; };
 		183E3BD815D02D0000E50157 /* emosad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emosad@2x.png"; sourceTree = "<group>"; };
-		183E3C5615D42D9200E50157 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
-		183E3C5715D42D9300E50157 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
 		183E3C5915D42D9400E50157 /* Answers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answers.h; sourceTree = "<group>"; };
 		183E3C5A15D42D9500E50157 /* Answers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answers.m; sourceTree = "<group>"; };
 		183E3C5C15D42D9500E50157 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		183E3C5D15D42D9600E50157 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		183E3C6315D43BD000E50157 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
+		183E3C6415D43BD100E50157 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
+		183E3C6615D43E7300E50157 /* SciFair.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SciFair.entitlements; sourceTree = "<group>"; };
 		1874134A15CFD57C00E48B50 /* emohappy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emohappy@2x.png"; sourceTree = "<group>"; };
 		1874134C15CFD84E00E48B50 /* SFTestFinishedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestFinishedViewController.h; sourceTree = "<group>"; };
 		1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestFinishedViewController.m; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		180DA69815CD8AE60029E9C2 /* SciFair */ = {
 			isa = PBXGroup;
 			children = (
+				183E3C6615D43E7300E50157 /* SciFair.entitlements */,
 				180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */,
 				180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */,
 				180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */,
@@ -135,13 +137,6 @@
 				180DA6A815CD8AE70029E9C2 /* SFViewController.m */,
 				183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */,
 				183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */,
-				180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */,
-				183E3C5C15D42D9500E50157 /* Person.h */,
-				183E3C5D15D42D9600E50157 /* Person.m */,
-				183E3C5915D42D9400E50157 /* Answers.h */,
-				183E3C5A15D42D9500E50157 /* Answers.m */,
-				183E3C5615D42D9200E50157 /* Times.h */,
-				183E3C5715D42D9300E50157 /* Times.m */,
 				183E3BE015D0F05100E50157 /* Emotion (Placeholders) */,
 				183E3BDF15D0F02A00E50157 /* Core Objects */,
 				1874134F15CFD99F00E48B50 /* Test controllers */,
@@ -206,6 +201,13 @@
 		187AECEE15CEC83500077710 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				180DA6B115CD8C9A0029E9C2 /* SciFair.xcdatamodeld */,
+				183E3C6315D43BD000E50157 /* Times.h */,
+				183E3C6415D43BD100E50157 /* Times.m */,
+				183E3C5C15D42D9500E50157 /* Person.h */,
+				183E3C5D15D42D9600E50157 /* Person.m */,
+				183E3C5915D42D9400E50157 /* Answers.h */,
+				183E3C5A15D42D9500E50157 /* Answers.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -292,9 +294,9 @@
 				1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */,
 				183E3BD215D020B500E50157 /* SFTimes.m in Sources */,
 				183E3C5215D4218F00E50157 /* SciFair.xcdatamodeld in Sources */,
-				183E3C5815D42D9400E50157 /* Times.m in Sources */,
 				183E3C5B15D42D9500E50157 /* Answers.m in Sources */,
 				183E3C5E15D42D9700E50157 /* Person.m in Sources */,
+				183E3C6515D43BD300E50157 /* Times.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +376,7 @@
 		180DA6AD15CD8AE70029E9C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SciFair/SciFair.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SciFair/SciFair-Prefix.pch";
 				INFOPLIST_FILE = "SciFair/SciFair-Info.plist";
@@ -385,6 +388,7 @@
 		180DA6AE15CD8AE70029E9C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SciFair/SciFair.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SciFair/SciFair-Prefix.pch";
 				INFOPLIST_FILE = "SciFair/SciFair-Info.plist";

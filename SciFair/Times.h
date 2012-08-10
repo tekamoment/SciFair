@@ -28,6 +28,7 @@
 @property (nonatomic, retain) NSNumber * image11time;
 @property (nonatomic, retain) NSNumber * image12time;
 @property (nonatomic, retain) NSNumber * image13time;
+@property (nonatomic, retain) NSNumber * totalTime;
 @property (nonatomic, retain) Person *timeHolder;
 
 @end

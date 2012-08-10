@@ -47,12 +47,13 @@
         <attribute name="image12time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="image13time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="image14time" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="totalTime" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <relationship name="timeHolder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="averageTimes" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Emotion" positionX="-180" positionY="-144" width="128" height="103"/>
-        <element name="Person" positionX="0" positionY="0" width="128" height="118"/>
-        <element name="Times" positionX="-164" positionY="41" width="128" height="148"/>
-        <element name="Answers" positionX="198" positionY="-112" width="128" height="268"/>
+        <element name="Emotion" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Person" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Times" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Answers" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

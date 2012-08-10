@@ -13,6 +13,7 @@
     SFAppDelegate *app;
 }
 
+
 @property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
 
 @end
