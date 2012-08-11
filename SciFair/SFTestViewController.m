@@ -36,7 +36,7 @@
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
         [self stopTimer: timer];
     }
-        NSLog(@"%d questions correct.", questionsCorrect);
+    NSLog(@"%d questions correct.", questionsCorrect);
     currentQuestionIndex++;
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionImageString:currentQuestionIndex]];
         [self startTimer];
