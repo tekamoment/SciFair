@@ -20,7 +20,6 @@
 		181498CC15D60EA700F70812 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 181498CB15D60EA700F70812 /* Default-Landscape@2x~ipad.png */; };
 		181498CF15D610F000F70812 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 181498CE15D610F000F70812 /* Icon-72.png */; };
 		181498D115D610F800F70812 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181498D015D610F800F70812 /* Icon-72@2x.png */; };
-		181498D515D61B5400F70812 /* testbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 181498D415D61B5400F70812 /* testbutton.png */; };
 		183CE8A515CEDB89009F8B58 /* SFTestHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8A415CEDB89009F8B58 /* SFTestHelpViewController.m */; };
 		183CE8AC15CF4C5F009F8B58 /* SFMainResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */; };
 		183CE8AF15CF5B49009F8B58 /* SFTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CE8AE15CF5B49009F8B58 /* SFTestViewController.m */; };
@@ -35,10 +34,18 @@
 		183E3C5B15D42D9500E50157 /* Answers.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C5A15D42D9500E50157 /* Answers.m */; };
 		183E3C5E15D42D9700E50157 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C5D15D42D9600E50157 /* Person.m */; };
 		183E3C6515D43BD300E50157 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C6415D43BD100E50157 /* Times.m */; };
+		184D267615D68909003D61DB /* CubanoRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 184D267515D688FE003D61DB /* CubanoRegular.otf */; };
+		184D267815D69593003D61DB /* pretestbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D267715D69593003D61DB /* pretestbackground.png */; };
+		184D267C15D69AD5003D61DB /* greybuttonbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D267B15D69AD5003D61DB /* greybuttonbackground.png */; };
+		184D267F15D6A0FE003D61DB /* UbuntuTitlingBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */; };
 		1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1874134A15CFD57C00E48B50 /* emohappy@2x.png */; };
 		1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */; };
 		18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EBD15CE1CC6006F50E8 /* SFPerson.m */; };
 		18858EC115CE1F3C006F50E8 /* SFDataEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EC015CE1F3C006F50E8 /* SFDataEntryViewController.m */; };
+		18AE2C7815D658D000B58240 /* testbuttonbckg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C7715D658D000B58240 /* testbuttonbckg@2x.png */; };
+		18AE2C7C15D65FC700B58240 /* mainbackgroundI@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C7B15D65FC700B58240 /* mainbackgroundI@2x.png */; };
+		18AE2C7F15D66E8A00B58240 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C7E15D66E8A00B58240 /* background@2x.png */; };
+		18AE2C8115D6727A00B58240 /* mainbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C8015D6727A00B58240 /* mainbackground@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +69,6 @@
 		181498CB15D60EA700F70812 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		181498CE15D610F000F70812 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		181498D015D610F800F70812 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		181498D415D61B5400F70812 /* testbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testbutton.png; sourceTree = "<group>"; };
 		183CE8A315CEDB89009F8B58 /* SFTestHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestHelpViewController.h; sourceTree = "<group>"; };
 		183CE8A415CEDB89009F8B58 /* SFTestHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestHelpViewController.m; sourceTree = "<group>"; };
 		183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMainResultsViewController.h; sourceTree = "<group>"; };
@@ -84,6 +90,10 @@
 		183E3C5D15D42D9600E50157 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		183E3C6315D43BD000E50157 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
 		183E3C6415D43BD100E50157 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
+		184D267515D688FE003D61DB /* CubanoRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CubanoRegular.otf; sourceTree = "<group>"; };
+		184D267715D69593003D61DB /* pretestbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pretestbackground.png; sourceTree = "<group>"; };
+		184D267B15D69AD5003D61DB /* greybuttonbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greybuttonbackground.png; sourceTree = "<group>"; };
+		184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UbuntuTitlingBold.ttf; sourceTree = "<group>"; };
 		1874134A15CFD57C00E48B50 /* emohappy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emohappy@2x.png"; sourceTree = "<group>"; };
 		1874134C15CFD84E00E48B50 /* SFTestFinishedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestFinishedViewController.h; sourceTree = "<group>"; };
 		1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestFinishedViewController.m; sourceTree = "<group>"; };
@@ -91,6 +101,10 @@
 		18858EBD15CE1CC6006F50E8 /* SFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPerson.m; sourceTree = "<group>"; };
 		18858EBF15CE1F3C006F50E8 /* SFDataEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFDataEntryViewController.h; sourceTree = "<group>"; };
 		18858EC015CE1F3C006F50E8 /* SFDataEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFDataEntryViewController.m; sourceTree = "<group>"; };
+		18AE2C7715D658D000B58240 /* testbuttonbckg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testbuttonbckg@2x.png"; sourceTree = "<group>"; };
+		18AE2C7B15D65FC700B58240 /* mainbackgroundI@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainbackgroundI@2x.png"; sourceTree = "<group>"; };
+		18AE2C7E15D66E8A00B58240 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		18AE2C8015D6727A00B58240 /* mainbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainbackground@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +125,9 @@
 		180DA68315CD8AE60029E9C2 = {
 			isa = PBXGroup;
 			children = (
-				181498D415D61B5400F70812 /* testbutton.png */,
+				184D267515D688FE003D61DB /* CubanoRegular.otf */,
+				184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */,
+				184D267D15D69FC1003D61DB /* Images */,
 				181498CD15D60F6D00F70812 /* Required Images */,
 				180DA69815CD8AE60029E9C2 /* SciFair */,
 				180DA69115CD8AE60029E9C2 /* Frameworks */,
@@ -206,6 +222,19 @@
 			name = "Emotion (Placeholders)";
 			sourceTree = "<group>";
 		};
+		184D267D15D69FC1003D61DB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				184D267B15D69AD5003D61DB /* greybuttonbackground.png */,
+				184D267715D69593003D61DB /* pretestbackground.png */,
+				18AE2C8015D6727A00B58240 /* mainbackground@2x.png */,
+				18AE2C7B15D65FC700B58240 /* mainbackgroundI@2x.png */,
+				18AE2C7715D658D000B58240 /* testbuttonbckg@2x.png */,
+				18AE2C7E15D66E8A00B58240 /* background@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		1874134F15CFD99F00E48B50 /* Test controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +316,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184D267F15D6A0FE003D61DB /* UbuntuTitlingBold.ttf in Resources */,
+				184D267615D68909003D61DB /* CubanoRegular.otf in Resources */,
 				180DA69D15CD8AE60029E9C2 /* InfoPlist.strings in Resources */,
 				180DA6A615CD8AE70029E9C2 /* MainStoryboard.storyboard in Resources */,
 				1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */,
@@ -299,7 +330,12 @@
 				181498CC15D60EA700F70812 /* Default-Landscape@2x~ipad.png in Resources */,
 				181498CF15D610F000F70812 /* Icon-72.png in Resources */,
 				181498D115D610F800F70812 /* Icon-72@2x.png in Resources */,
-				181498D515D61B5400F70812 /* testbutton.png in Resources */,
+				18AE2C7815D658D000B58240 /* testbuttonbckg@2x.png in Resources */,
+				18AE2C7C15D65FC700B58240 /* mainbackgroundI@2x.png in Resources */,
+				18AE2C7F15D66E8A00B58240 /* background@2x.png in Resources */,
+				18AE2C8115D6727A00B58240 /* mainbackground@2x.png in Resources */,
+				184D267815D69593003D61DB /* pretestbackground.png in Resources */,
+				184D267C15D69AD5003D61DB /* greybuttonbackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +444,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SciFair/SciFair-Prefix.pch";
 				INFOPLIST_FILE = "SciFair/SciFair-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -420,6 +457,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SciFair/SciFair-Prefix.pch";
 				INFOPLIST_FILE = "SciFair/SciFair-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

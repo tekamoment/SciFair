@@ -13,6 +13,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *genderControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *yearControl;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UILabel *testSubjectInfo;
+@property (weak, nonatomic) IBOutlet UILabel *particulars;
+@property (weak, nonatomic) IBOutlet UILabel *genderLabel;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
 
 @end
 
@@ -118,6 +123,11 @@
     [yearControl addTarget:self
                     action:@selector(yearChanged)
           forControlEvents:UIControlEventValueChanged];
+    [self.view sendSubviewToBack:self.backgroundImage];
+    self.testSubjectInfo.font = [UIFont fontWithName:@"Cubano" size:70.0];
+    self.particulars.font = [UIFont fontWithName:@"Cubano" size:40.0];
+    self.genderLabel.font = [UIFont fontWithName:@"Cubano" size:40.0];
+    self.levelLabel.font = [UIFont fontWithName:@"Cubano" size:40.0];
 	// Do any additional setup after loading the view.
 }
 

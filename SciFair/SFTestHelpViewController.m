@@ -9,6 +9,7 @@
 #import "SFTestHelpViewController.h"
 
 @interface SFTestHelpViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end
 
@@ -26,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.backgroundImage.image = [UIImage imageNamed:@"pretestbackground.png"];
+    [self.view sendSubviewToBack:self.backgroundImage];
 	// Do any additional setup after loading the view.
 }
 

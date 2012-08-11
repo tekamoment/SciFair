@@ -21,6 +21,7 @@
 
 @implementation SFTestViewController
 @synthesize emotionImage;
+@synthesize timer = _timer;
 
 #pragma mark IB ACTION - BUTTON PRESSED
 - (IBAction)buttonPressed:(UIButton *)sender {
@@ -128,6 +129,7 @@
 
 - (void)viewDidLoad
 {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewDidLoad];
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:@"image1"];
     currentQuestionIndex = 1;
@@ -152,5 +154,7 @@
         return YES;
     }
 }
+
+
 
 @end

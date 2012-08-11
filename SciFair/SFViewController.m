@@ -9,6 +9,7 @@
 #import "SFViewController.h"
 
 @interface SFViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad
 {
+    self.backgroundImage.image = [UIImage imageNamed:@"mainbackground@2x.png"];
+    self.navigationItem.title = @"Haiiii!";
+    [self.view sendSubviewToBack:self.backgroundImage];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -25,6 +29,8 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
