@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     self.backgroundImage.image = [UIImage imageNamed:@"mainbackground@2x.png"];
-    self.navigationItem.title = @"Haiiii!";
+    // self.navigationItem.title = @"Haiiii!";
     [self.view sendSubviewToBack:self.backgroundImage];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

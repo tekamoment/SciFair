@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-1128" y="-39"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Main Menu-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="SFViewController" sceneMemberID="viewController">
@@ -56,6 +56,7 @@
                                 <rect key="frame" x="639" y="442" width="208" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Results" backgroundImage="greybuttonbackground.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -79,9 +80,11 @@
                                 <rect key="frame" x="639" y="339" width="206" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Emotions">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Emotions" backgroundImage="greybuttonbackground.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,7 +108,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FUh-FI-chG"/>
+                    <navigationItem key="navigationItem" title="Main Menu" id="FUh-FI-chG"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -123,6 +126,13 @@
                     <view key="view" contentMode="scaleToFill" id="Cii-uM-Yg2">
                         <rect key="frame" x="0.0" y="64" width="1024" height="655"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ac6-Vx-gWY">
+                                <rect key="frame" x="263" y="172" width="487" height="311"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -170,6 +180,14 @@
                 <tabBarController definesPresentationContext="YES" id="uaE-YX-Efy" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="9qT-G1-vMc">
                         <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XAE-b2-r8X">
+                            <rect key="frame" x="307" y="7" width="409" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -305,7 +323,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Data Entry" id="p4n-t3-D8R"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <connections>
                         <outlet property="backgroundImage" destination="aXm-Y9-yLm" id="CgT-e1-aPn"/>
                         <outlet property="genderControl" destination="c58-w4-2b2" id="eub-kz-kdk"/>
@@ -322,17 +340,19 @@
             </objects>
             <point key="canvasLocation" x="1217" y="-998"/>
         </scene>
-        <!--View Controller-->
+        <!--Emotions View Controller - Emotions-->
         <scene sceneID="bhI-Av-YAX">
             <objects>
-                <viewController id="98P-7P-2tI" sceneMemberID="viewController">
+                <viewController id="98P-7P-2tI" customClass="SFEmotionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uhW-pW-Evk">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ak9-rz-h6d"/>
+                    <navigationItem key="navigationItem" title="Emotions" id="ak9-rz-h6d">
+                        <barButtonItem key="backBarButtonItem" title="Main Menu" id="BKH-mG-aqo"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6D-ei-fpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,6 +391,7 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="What's this test about?" id="fLM-CD-DJV"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <connections>
                         <outlet property="backgroundImage" destination="auH-lI-VaB" id="KBj-2h-NlT"/>
                     </connections>
@@ -379,16 +400,16 @@
             </objects>
             <point key="canvasLocation" x="2434" y="-998"/>
         </scene>
-        <!--Test View Controller-->
+        <!--Test View Controller - What emotion is this?-->
         <scene sceneID="ZrO-Nl-302">
             <objects>
                 <viewController id="xDO-Kx-TLZ" customClass="SFTestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GzO-CO-DzJ">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="YCT-6h-883">
-                                <rect key="frame" x="0.0" y="48" width="1024" height="556"/>
+                                <rect key="frame" x="0.0" y="48" width="1024" height="512"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LzW-AW-yHy">
@@ -500,8 +521,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LXS-Mi-ck3"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationItem key="navigationItem" title="What emotion is this?" id="LXS-Mi-ck3"/>
                     <connections>
                         <outlet property="emotionImage" destination="YCT-6h-883" id="sec-6P-O2D"/>
                         <segue destination="n4l-EU-9dY" kind="push" identifier="testFinishedSegue" id="Zei-6D-CUh"/>
@@ -511,12 +531,12 @@
             </objects>
             <point key="canvasLocation" x="3623" y="-998"/>
         </scene>
-        <!--Test Finished View Controller-->
+        <!--Test Finished View Controller - You're done!-->
         <scene sceneID="Y3T-g3-2vV">
             <objects>
                 <viewController id="n4l-EU-9dY" customClass="SFTestFinishedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XmJ-rZ-fw7">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sEk-ac-NYh">
@@ -545,7 +565,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RXR-Tf-04e"/>
+                    <navigationItem key="navigationItem" title="You're done!" id="RXR-Tf-04e"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuF-ra-Qwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -570,6 +591,9 @@
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="yearControl" candidateClass="UISegmentedControl"/>
             </relationships>
+        </class>
+        <class className="SFEmotionsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SFEmotionsViewController.h"/>
         </class>
         <class className="SFMainResultsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SFMainResultsViewController.h"/>

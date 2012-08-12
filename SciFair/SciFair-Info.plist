@@ -24,18 +24,13 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.carlosarcenas.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>7V57DMYZ44.com.carlosarcenas.SciFair</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>CubanoRegular.otf</string>
-		<string>UbuntuTitlingBold.ttf</string>
-	</array>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
@@ -44,6 +39,11 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CubanoRegular.otf</string>
+		<string>UbuntuTitlingBold.ttf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UIPrerenderedIcon</key>

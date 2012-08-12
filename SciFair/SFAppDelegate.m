@@ -18,6 +18,9 @@
 {
     // Override point for customization after application launch.
     NSLog(@"%@", self.managedObjectContext);
+    //id currentiCloudToken = [[NSFileManager defaultManager] ubiquityIdentityToken];
+    //NSLog(@"%@", currentiCloudToken);
+
     return YES;
 }
 							

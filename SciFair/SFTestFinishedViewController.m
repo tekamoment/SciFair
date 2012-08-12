@@ -25,6 +25,15 @@
  
     
     [self commit];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:app.managedObjectContext];
+    [fetchRequest setEntity:entityDescription];
+    [fetchRequest setReturnsObjectsAsFaults:NO];
+    NSError *error;
+    NSArray *fetchedObjects = [app.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    for (Person *person in fetchedObjects) {
+        NSLog(@"%@", person);
+    }
     [[self navigationController] popToRootViewControllerAnimated:YES];
 
     
@@ -99,6 +108,10 @@
     newEntryTimes.timeHolder = newEntry;
     
     NSLog(@"%@, %@, %@.", newEntry, newEntryAnswers, newEntryTimes);
+    NSError *error = nil;
+    if (![app.managedObjectContext save:&error]) {
+        NSLog(@"Failed save.");
+    }
      
 }
 
@@ -116,6 +129,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     app = (SFAppDelegate*)[UIApplication sharedApplication].delegate;
+    self.navigationItem.hidesBackButton = YES;
     //self.resultText.text = [NSString stringWithFormat:@"You scored %@ points and took %@ seconds to do so.", [[SFPerson testSubject] points], [[[SFTimes cumulativeTimes] times] objectForKey:@"totalTime"]  ];
 }
 

@@ -36,8 +36,9 @@
 		183E3C6515D43BD300E50157 /* Times.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E3C6415D43BD100E50157 /* Times.m */; };
 		184D267615D68909003D61DB /* CubanoRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 184D267515D688FE003D61DB /* CubanoRegular.otf */; };
 		184D267815D69593003D61DB /* pretestbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D267715D69593003D61DB /* pretestbackground.png */; };
-		184D267C15D69AD5003D61DB /* greybuttonbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D267B15D69AD5003D61DB /* greybuttonbackground.png */; };
 		184D267F15D6A0FE003D61DB /* UbuntuTitlingBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */; };
+		184D268515D79541003D61DB /* SFEmotionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184D268415D79541003D61DB /* SFEmotionsViewController.m */; };
+		184D268B15D79840003D61DB /* greybuttonbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 184D268A15D79840003D61DB /* greybuttonbackground.png */; };
 		1874134B15CFD57C00E48B50 /* emohappy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1874134A15CFD57C00E48B50 /* emohappy@2x.png */; };
 		1874134E15CFD84E00E48B50 /* SFTestFinishedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */; };
 		18858EBE15CE1CC6006F50E8 /* SFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18858EBD15CE1CC6006F50E8 /* SFPerson.m */; };
@@ -90,10 +91,12 @@
 		183E3C5D15D42D9600E50157 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		183E3C6315D43BD000E50157 /* Times.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Times.h; sourceTree = "<group>"; };
 		183E3C6415D43BD100E50157 /* Times.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Times.m; sourceTree = "<group>"; };
-		184D267515D688FE003D61DB /* CubanoRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CubanoRegular.otf; sourceTree = "<group>"; };
+		184D267515D688FE003D61DB /* CubanoRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CubanoRegular.otf; path = ../CubanoRegular.otf; sourceTree = "<group>"; };
 		184D267715D69593003D61DB /* pretestbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pretestbackground.png; sourceTree = "<group>"; };
-		184D267B15D69AD5003D61DB /* greybuttonbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greybuttonbackground.png; sourceTree = "<group>"; };
-		184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UbuntuTitlingBold.ttf; sourceTree = "<group>"; };
+		184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = UbuntuTitlingBold.ttf; path = ../UbuntuTitlingBold.ttf; sourceTree = "<group>"; };
+		184D268315D79540003D61DB /* SFEmotionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFEmotionsViewController.h; path = ../SFEmotionsViewController.h; sourceTree = "<group>"; };
+		184D268415D79541003D61DB /* SFEmotionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFEmotionsViewController.m; path = ../SFEmotionsViewController.m; sourceTree = "<group>"; };
+		184D268A15D79840003D61DB /* greybuttonbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greybuttonbackground.png; sourceTree = "<group>"; };
 		1874134A15CFD57C00E48B50 /* emohappy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emohappy@2x.png"; sourceTree = "<group>"; };
 		1874134C15CFD84E00E48B50 /* SFTestFinishedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTestFinishedViewController.h; sourceTree = "<group>"; };
 		1874134D15CFD84E00E48B50 /* SFTestFinishedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTestFinishedViewController.m; sourceTree = "<group>"; };
@@ -125,8 +128,6 @@
 		180DA68315CD8AE60029E9C2 = {
 			isa = PBXGroup;
 			children = (
-				184D267515D688FE003D61DB /* CubanoRegular.otf */,
-				184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */,
 				184D267D15D69FC1003D61DB /* Images */,
 				181498CD15D60F6D00F70812 /* Required Images */,
 				180DA69815CD8AE60029E9C2 /* SciFair */,
@@ -157,6 +158,8 @@
 		180DA69815CD8AE60029E9C2 /* SciFair */ = {
 			isa = PBXGroup;
 			children = (
+				184D268315D79540003D61DB /* SFEmotionsViewController.h */,
+				184D268415D79541003D61DB /* SFEmotionsViewController.m */,
 				181498C815D60BA600F70812 /* SciFair.entitlements */,
 				180DA6A115CD8AE70029E9C2 /* SFAppDelegate.h */,
 				180DA6A215CD8AE70029E9C2 /* SFAppDelegate.m */,
@@ -177,6 +180,8 @@
 		180DA69915CD8AE60029E9C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				184D267515D688FE003D61DB /* CubanoRegular.otf */,
+				184D267E15D6A0EC003D61DB /* UbuntuTitlingBold.ttf */,
 				180DA69A15CD8AE60029E9C2 /* SciFair-Info.plist */,
 				180DA69B15CD8AE60029E9C2 /* InfoPlist.strings */,
 				180DA69E15CD8AE60029E9C2 /* main.m */,
@@ -225,7 +230,7 @@
 		184D267D15D69FC1003D61DB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				184D267B15D69AD5003D61DB /* greybuttonbackground.png */,
+				184D268A15D79840003D61DB /* greybuttonbackground.png */,
 				184D267715D69593003D61DB /* pretestbackground.png */,
 				18AE2C8015D6727A00B58240 /* mainbackground@2x.png */,
 				18AE2C7B15D65FC700B58240 /* mainbackgroundI@2x.png */,
@@ -335,7 +340,7 @@
 				18AE2C7F15D66E8A00B58240 /* background@2x.png in Resources */,
 				18AE2C8115D6727A00B58240 /* mainbackground@2x.png in Resources */,
 				184D267815D69593003D61DB /* pretestbackground.png in Resources */,
-				184D267C15D69AD5003D61DB /* greybuttonbackground.png in Resources */,
+				184D268B15D79840003D61DB /* greybuttonbackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +366,7 @@
 				183E3C5B15D42D9500E50157 /* Answers.m in Sources */,
 				183E3C5E15D42D9700E50157 /* Person.m in Sources */,
 				183E3C6515D43BD300E50157 /* Times.m in Sources */,
+				184D268515D79541003D61DB /* SFEmotionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

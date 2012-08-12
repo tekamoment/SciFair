@@ -129,13 +129,13 @@
 
 - (void)viewDidLoad
 {
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewDidLoad];
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:@"image1"];
     currentQuestionIndex = 1;
     questionsCorrect = 0;
 #pragma mark // Do a "Test begins in..."?
     [self startTimer];
+    self.navigationItem.hidesBackButton = YES;
 	// Do any additional setup after loading the view.
 }
 
