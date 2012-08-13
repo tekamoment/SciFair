@@ -47,6 +47,7 @@
 		18AE2C7C15D65FC700B58240 /* mainbackgroundI@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C7B15D65FC700B58240 /* mainbackgroundI@2x.png */; };
 		18AE2C7F15D66E8A00B58240 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C7E15D66E8A00B58240 /* background@2x.png */; };
 		18AE2C8115D6727A00B58240 /* mainbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AE2C8015D6727A00B58240 /* mainbackground@2x.png */; };
+		18FAD6CA15D804B00083FB7E /* SFSubjectResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FAD6C915D804B00083FB7E /* SFSubjectResultsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,8 @@
 		18AE2C7B15D65FC700B58240 /* mainbackgroundI@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainbackgroundI@2x.png"; sourceTree = "<group>"; };
 		18AE2C7E15D66E8A00B58240 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		18AE2C8015D6727A00B58240 /* mainbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainbackground@2x.png"; sourceTree = "<group>"; };
+		18FAD6C815D804B00083FB7E /* SFSubjectResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFSubjectResultsTableViewController.h; sourceTree = "<group>"; };
+		18FAD6C915D804B00083FB7E /* SFSubjectResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFSubjectResultsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +169,7 @@
 				180DA6A415CD8AE70029E9C2 /* MainStoryboard.storyboard */,
 				180DA6A715CD8AE70029E9C2 /* SFViewController.h */,
 				180DA6A815CD8AE70029E9C2 /* SFViewController.m */,
-				183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */,
-				183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */,
+				18FAD6C615D803770083FB7E /* Results controllers */,
 				183E3BE015D0F05100E50157 /* Emotion (Placeholders) */,
 				183E3BDF15D0F02A00E50157 /* Core Objects */,
 				1874134F15CFD99F00E48B50 /* Test controllers */,
@@ -269,6 +271,17 @@
 			name = "Core Data";
 			sourceTree = "<group>";
 		};
+		18FAD6C615D803770083FB7E /* Results controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18FAD6C815D804B00083FB7E /* SFSubjectResultsTableViewController.h */,
+				18FAD6C915D804B00083FB7E /* SFSubjectResultsTableViewController.m */,
+				183CE8AA15CF4C5F009F8B58 /* SFMainResultsViewController.h */,
+				183CE8AB15CF4C5F009F8B58 /* SFMainResultsViewController.m */,
+			);
+			name = "Results controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +380,7 @@
 				183E3C5E15D42D9700E50157 /* Person.m in Sources */,
 				183E3C6515D43BD300E50157 /* Times.m in Sources */,
 				184D268515D79541003D61DB /* SFEmotionsViewController.m in Sources */,
+				18FAD6CA15D804B00083FB7E /* SFSubjectResultsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

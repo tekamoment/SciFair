@@ -26,6 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    /*NSArray *barItems = @[@"Overview", @"Subjects", @"Trends"];
+    UISegmentedControl * topBar = [[UISegmentedControl alloc] initWithItems:barItems];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:topBar];
+    self.navigationItem.rightBarButtonItem = item;
+     */
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -39,5 +45,6 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
 
 @end

@@ -25,15 +25,6 @@
  
     
     [self commit];
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:app.managedObjectContext];
-    [fetchRequest setEntity:entityDescription];
-    [fetchRequest setReturnsObjectsAsFaults:NO];
-    NSError *error;
-    NSArray *fetchedObjects = [app.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    for (Person *person in fetchedObjects) {
-        NSLog(@"%@", person);
-    }
     [[self navigationController] popToRootViewControllerAnimated:YES];
 
     

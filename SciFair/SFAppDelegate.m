@@ -18,6 +18,11 @@
 {
     // Override point for customization after application launch.
     NSLog(@"%@", self.managedObjectContext);
+    NSURL *iCloudURL = [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil];
+    NSLog(@"%@", iCloudURL);
+    NSURL *iCloudDocumentsURL = [iCloudURL URLByAppendingPathComponent:@"Documents"];
+    NSLog(@"%@", iCloudDocumentsURL);
+    
     //id currentiCloudToken = [[NSFileManager defaultManager] ubiquityIdentityToken];
     //NSLog(@"%@", currentiCloudToken);
 
@@ -104,6 +109,12 @@
     if (_persistentStoreCoordinator != nil) {
         return _persistentStoreCoordinator;
     }
+    
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+                                   
+    NSPersistentStoreCoordinator *psc = _persistentStoreCoordinator;
+    
+                                   
     
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"SciFair.sqlite"];
     
