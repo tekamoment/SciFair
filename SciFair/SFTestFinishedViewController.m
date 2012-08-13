@@ -100,11 +100,13 @@
     
     NSLog(@"%@, %@, %@.", newEntry, newEntryAnswers, newEntryTimes);
     NSError *error = nil;
-    NSManagedObjectContext 
-    if (![app.managedObjectContext save:&error]) {
+    NSManagedObjectContext *context = app.managedObjectContext;
+    if ([[[context persistentStoreCoordinator] persistentStores] count] > 0) {
+        if (![context save:&error]) {
         NSLog(@"Failed save.");
     }
-     
+    }
+NSLog(@"Sent to cloud.");
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

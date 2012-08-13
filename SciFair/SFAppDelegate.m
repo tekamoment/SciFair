@@ -170,16 +170,20 @@
     //NSURL *storePath = [[self applicationDocumentsDirectory] urlByAppendingPathComponent:@"SciFair.sqlite"];
     
     NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"SciFair.sqlite"];
+    NSLog(@"Store path search");
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"Q start");
         NSFileManager *fileManager = [NSFileManager defaultManager];
         
         NSURL *storeURL = [NSURL fileURLWithPath:storePath];
         NSURL *cloudURL = [fileManager URLForUbiquityContainerIdentifier:nil];
-        NSString *coreDataCloudContent = [[cloudURL path] stringByAppendingPathComponent:@"SciFair"];
+        NSString *coreDataCloudContent = [[cloudURL path] stringByAppendingPathComponent:@"Documents"];
         cloudURL = [NSURL fileURLWithPath:coreDataCloudContent];
         
         NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.carlosarcenas.SciFair", NSPersistentStoreUbiquitousContentNameKey, cloudURL, NSPersistentStoreUbiquitousContentURLKey, [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption, [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+        
+        NSLog(@"Q start");
         
         NSError *error = nil;
         [psc lock];
@@ -197,6 +201,7 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
             abort();
         }
+        NSLog(@"unlock");
         [psc unlock];
         
         dispatch_async(dispatch_get_main_queue(), ^{
