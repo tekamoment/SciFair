@@ -100,6 +100,7 @@
     
     NSLog(@"%@, %@, %@.", newEntry, newEntryAnswers, newEntryTimes);
     NSError *error = nil;
+    NSManagedObjectContext 
     if (![app.managedObjectContext save:&error]) {
         NSLog(@"Failed save.");
     }
