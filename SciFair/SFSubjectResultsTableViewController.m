@@ -114,19 +114,32 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        // Delete the managed object for the given index path
+            NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+		[context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+		
+		// Save the context.
+		NSError *error;
+        if ([[[context persistentStoreCoordinator] persistentStores] count] > 0) {
+            if (![context save:&error]) {
+                /*
+                 Replace this implementation with code to handle the error appropriately.
+                 
+                 abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. If it is not possible to recover from the error, display an alert panel that instructs the user to quit the application by pressing the Home button.
+                 */
+                NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+                abort();
+            }
+        }
+
     }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
