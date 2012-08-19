@@ -2,7 +2,7 @@
 //  Answers.h
 //  SciFair
 //
-//  Created by Carlos Arcenas on 8/10/12.
+//  Created by Carlos Arcenas on 8/13/12.
 //  Copyright (c) 2012 Carlos Arcenas. All rights reserved.
 //
 
@@ -27,6 +27,20 @@
 @property (nonatomic, retain) NSString * answer12;
 @property (nonatomic, retain) NSString * answer13;
 @property (nonatomic, retain) NSString * answer14;
+@property (nonatomic, retain) NSNumber * answer1correct;
+@property (nonatomic, retain) NSNumber * answer2correct;
+@property (nonatomic, retain) NSNumber * answer3correct;
+@property (nonatomic, retain) NSNumber * answer4correct;
+@property (nonatomic, retain) NSNumber * answer5correct;
+@property (nonatomic, retain) NSNumber * answer6correct;
+@property (nonatomic, retain) NSNumber * answer7correct;
+@property (nonatomic, retain) NSNumber * answer8correct;
+@property (nonatomic, retain) NSNumber * answer9correct;
+@property (nonatomic, retain) NSNumber * answer10correct;
+@property (nonatomic, retain) NSNumber * answer11correct;
+@property (nonatomic, retain) NSNumber * answer12correct;
+@property (nonatomic, retain) NSNumber * answer13correct;
+@property (nonatomic, retain) NSNumber * answer14correct;
 @property (nonatomic, retain) Person *answerHolder;
 
 @end

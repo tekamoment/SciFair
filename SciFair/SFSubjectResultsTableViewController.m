@@ -8,6 +8,8 @@
 
 #import "SFSubjectResultsTableViewController.h"
 #import "Person.h"
+#import "SFTestSubjectDetailViewController.h"
+#import "SFTestSubjectCell.h"
 
 @interface SFSubjectResultsTableViewController ()
 @property (nonatomic,strong) NSManagedObjectContext *moc;
@@ -44,7 +46,7 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
-
+    self.navigationItem.title = [NSString stringWithFormat:@"%u/140 people tested!", [[self.fetchedResultsController fetchedObjects] count]];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -68,6 +70,7 @@
     // Configure the cell to show the book's title
     Person *person = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = person.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@ - Tested on %@ - %@ points", person.gender, person.year, person.dateTested, person.points];
     NSLog(@"configcalled");
 }
 
@@ -161,6 +164,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self performSegueWithIdentifier:@"testSubjectDetail" sender:tableView];
+    
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -168,6 +173,19 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"testSubjectDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Person *selectedSubject = (Person *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
+        
+        // pass the subject to the detail controller
+        SFTestSubjectDetailViewController *detailViewController = (SFTestSubjectDetailViewController *)[segue destinationViewController];
+        detailViewController.testSubject = selectedSubject;
+    }
 }
 
 #pragma mark - NSFetchedResultsController
@@ -182,8 +200,10 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:app.managedObjectContext];
     [fetchRequest setEntity:entity];
-    NSSortDescriptor *authorDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:authorDescriptor, nil];
+    NSSortDescriptor *genderDescriptor = [[NSSortDescriptor alloc] initWithKey:@"gender" ascending:YES];
+    NSSortDescriptor *dateDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dateTested" ascending:NO];
+    NSSortDescriptor *yearDescriptor = [[NSSortDescriptor alloc] initWithKey:@"year" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:genderDescriptor, yearDescriptor, dateDescriptor, nil];
     [fetchRequest setSortDescriptors:sortDescriptors];
     
     _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:app.managedObjectContext sectionNameKeyPath:nil cacheName:nil];

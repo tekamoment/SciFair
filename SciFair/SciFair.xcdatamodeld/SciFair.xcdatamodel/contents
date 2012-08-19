@@ -2,19 +2,33 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1807" systemVersion="12A269" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Answers" representedClassName="Answers" syncable="YES">
         <attribute name="answer1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer1correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer2correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer3correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer4correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer5correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer6" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer6correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer7" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer7correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer8" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer8correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer9" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer9correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer10" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer10correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer11" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer11correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer12" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer12correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer13" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer13correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="answer14" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer14correct" optional="YES" attributeType="Boolean" syncable="YES"/>
         <relationship name="answerHolder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="answers" inverseEntity="Person" syncable="YES"/>
     </entity>
     <entity name="Emotion" representedClassName="Emotion" syncable="YES">
@@ -52,9 +66,9 @@
         <relationship name="timeHolder" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="averageTimes" inverseEntity="Person" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Answers" positionX="0" positionY="0" width="128" height="270"/>
-        <element name="Emotion" positionX="0" positionY="0" width="128" height="105"/>
-        <element name="Person" positionX="0" positionY="0" width="128" height="150"/>
-        <element name="Times" positionX="0" positionY="0" width="128" height="300"/>
+        <element name="Answers" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Emotion" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Person" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Times" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

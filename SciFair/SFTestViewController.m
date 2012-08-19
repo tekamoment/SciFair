@@ -16,6 +16,7 @@
 @property (nonatomic) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UIImageView *emotionImage;
 @property (nonatomic, strong) NSNumber *avgTime;
+@property (weak, nonatomic) IBOutlet UIImageView *background;
 
 @end
 
@@ -30,14 +31,17 @@
        if ([answer isEqualToString:[[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionEmotionString:currentQuestionIndex]]]) {
         NSLog(@"Yeah!");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
-        questionsCorrect++;
+           [[[SFPerson testSubject] answers] setValue:[NSNumber numberWithBool:YES] forKey:[self answerCorrectNumberString:currentQuestionIndex]];
+           questionsCorrect++;
         [self stopTimer:timer];
     } else {
         NSLog(@"Nuh.");
         [[[SFPerson testSubject] answers] setValue:answer forKey:[self answerNumberString:currentQuestionIndex]];
+           [[[SFPerson testSubject] answers] setValue:[NSNumber numberWithBool:NO] forKey:[self answerCorrectNumberString:currentQuestionIndex]];
         [self stopTimer: timer];
     }
     NSLog(@"%d questions correct.", questionsCorrect);
+        NSLog(@"%d questions.", currentQuestionIndex);
     currentQuestionIndex++;
     self.emotionImage.image = [[[SFEmotion emotionsDict] emotionInfo] valueForKey:[self questionImageString:currentQuestionIndex]];
         [self startTimer];
@@ -110,6 +114,12 @@
     return [NSString stringWithFormat:@"answer%d", index];
 }
 
+- (NSString *) answerCorrectNumberString:(int)index {
+    return [NSString stringWithFormat:@"answer%dcorrect", index];
+}
+
+
+
 - (NSString *) timeNumberString:(int)index {
      return [NSString stringWithFormat:@"image%dtime", index];
 }
@@ -136,12 +146,14 @@
 #pragma mark // Do a "Test begins in..."?
     [self startTimer];
     self.navigationItem.hidesBackButton = YES;
+    [self.view sendSubviewToBack:self.background];
 	// Do any additional setup after loading the view.
 }
 
 - (void)viewDidUnload
 {
    
+    [self setBackground:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

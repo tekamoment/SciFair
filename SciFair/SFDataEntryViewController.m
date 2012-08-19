@@ -45,8 +45,7 @@
 #pragma mark Data input -- DONE --
 
 - (void)genderChanged {
-    if (self.genderControl.selectedSegmentIndex == 1) [[SFPerson testSubject] setGender:@"Girl"];
-    else [[SFPerson testSubject] setGender:@"Boy"];
+    if (self.genderControl.selectedSegmentIndex == 1) [[SFPerson testSubject] setGender:@"Female"];    else [[SFPerson testSubject] setGender:@"Male"];
     NSLog(@"Gender = %@", [[SFPerson testSubject] gender]);
 }
 

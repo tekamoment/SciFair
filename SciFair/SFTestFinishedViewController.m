@@ -14,6 +14,7 @@
 #import "Answers.h"
 
 @interface SFTestFinishedViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *pointsLabel;
 
 @end
 
@@ -72,7 +73,12 @@
     newEntry.gender = [[SFPerson testSubject] gender];
     newEntry.year = [[SFPerson testSubject] year];
     newEntry.points = [[SFPerson testSubject] points];
-     
+    newEntry.dateTested = [NSDate date];
+    
+    [[SFPerson testSubject] setName: nil];
+    [[SFPerson testSubject] setGender:nil];
+    [[SFPerson testSubject] setYear:nil];
+    [[SFPerson testSubject] setPoints:nil];
     
     Times *newEntryTimes = [NSEntityDescription insertNewObjectForEntityForName:@"Times" inManagedObjectContext:app.managedObjectContext];
     void(^addTimesToCoreData)(id, id, BOOL *);
@@ -82,16 +88,23 @@
     }; // fix to ensure booleans!!!!!!
     [[[SFTimes cumulativeTimes] times] enumerateKeysAndObjectsUsingBlock:addTimesToCoreData];
     
+    [[SFTimes cumulativeTimes] setTimes:nil];
 
     Answers *newEntryAnswers = [NSEntityDescription insertNewObjectForEntityForName:@"Answers" inManagedObjectContext:app.managedObjectContext];
     void (^addToCoreData)(id, id, BOOL *);
     addToCoreData = ^(id key, id obj, BOOL *stop) {
         //for (NSString *key in [[SFPerson testSubject] answers]) {
+        if ([key hasSuffix:@"correct"]) {
+            NSNumber *booly = [[[SFPerson testSubject] answers] objectForKey:key];
+            [newEntryAnswers setValue:booly forKey:key];
+        } else {
         NSString *answer = [[[SFPerson testSubject] answers] objectForKey:key];
         [newEntryAnswers setValue:answer forKey:key];
+        }
         // }
     };
     [[[SFPerson testSubject] answers] enumerateKeysAndObjectsUsingBlock:addToCoreData];
+    [[SFPerson testSubject] setAnswers:nil];
     
     newEntry.answers = newEntryAnswers;
     newEntryAnswers.answerHolder = newEntry;
@@ -124,11 +137,13 @@ NSLog(@"Sent to cloud.");
 	// Do any additional setup after loading the view.
     app = (SFAppDelegate*)[UIApplication sharedApplication].delegate;
     self.navigationItem.hidesBackButton = YES;
+    self.pointsLabel.text = [NSString stringWithFormat:@"%@", [[SFPerson testSubject] points]];
     //self.resultText.text = [NSString stringWithFormat:@"You scored %@ points and took %@ seconds to do so.", [[SFPerson testSubject] points], [[[SFTimes cumulativeTimes] times] objectForKey:@"totalTime"]  ];
 }
 
 - (void)viewDidUnload
 {
+    [self setPointsLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

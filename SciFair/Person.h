@@ -2,7 +2,7 @@
 //  Person.h
 //  SciFair
 //
-//  Created by Carlos Arcenas on 8/10/12.
+//  Created by Carlos Arcenas on 8/13/12.
 //  Copyright (c) 2012 Carlos Arcenas. All rights reserved.
 //
 
@@ -17,7 +17,8 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * points;
 @property (nonatomic, retain) NSString * year;
-@property (nonatomic, retain) Times *averageTimes;
+@property (nonatomic, retain) NSDate * dateTested;
 @property (nonatomic, retain) Answers *answers;
+@property (nonatomic, retain) Times *averageTimes;
 
 @end
